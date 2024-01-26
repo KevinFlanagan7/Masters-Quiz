@@ -21,6 +21,7 @@
 
     <title>Masters Quiz!</title>
 </head>
+
 <body>
     <h1 id="heading">
         The Masters Quiz
@@ -52,7 +53,7 @@
                     Click Resart Quiz or Masters logo
                 </li>
             </ol>
-            
+
             <div id="name-box">
                 <input type="text" id="name" name="name" class="name-input" placeholder="Enter Name">
             </div>
@@ -61,8 +62,66 @@
                 <button id="startquiz" class="start-btn">Start Quiz</button>
             </div>
         </div>
+        
+        <!-- Container for questions and options -->
+        <div id="quiz-container" class="questions-game hide">
 
+            <p id="welcome">
+                <span id="username"></span>! Welcome to the Quiz.
+            </p>
 
-    
+            <div id="question-counter">
+                Question <span id="current-question">1</span> of 10
+            </div>
+
+            <div id="quiz-question">
+                'Questions Placeholder'
+            </div>
+
+            <div id="options-area">
+                <button class="option-btn">option A</button>
+                <button class="option-btn">option B</button>
+                <button class="option-btn">option C</button>
+                <button class="option-btn">option D</button>
+            </div>
+
+            <div>
+                <button id="next-btn" class="nextquestion-btn hide">
+                    Next Question
+                </button>
+                <button class="results hide" id="results-btn">
+                    Show Result!
+                </button>
+            </div>
+            <div id="score-area">
+                <p class="scores">
+                    Score: <span id="score">0</span>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Container with the result -->
+        <div id="result-container" class="result hide">
+            <span id="username-result"></span>,
+            <p id="result-message">
+                'Placeholder'
+            </p>
+            <div id="restart-quiz">
+                <a href="index.html">
+                    <button class="restart-btn">Restart Quiz</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
+</html>
+
+
+
+</body>
+
 </html>
