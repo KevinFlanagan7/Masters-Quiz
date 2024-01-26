@@ -112,6 +112,17 @@ resultsBtnRef.addEventListener('click', function () {
     quizContainerRef.classList.add('hide');
     resultContainerRef.classList.remove('hide');
     usernameResultRef.innerHTML = nameRef.value;
+    const scorePercent = Math.round(100 * score / questions.length);
+    if (scorePercent >= 80) {
+        resultMessageRef.innerHTML = `Congratulations, you got ${scorePercent}%, you are a Masters champion!`;
+        crowdApplauseRef.play();
+    } else if (scorePercent >= 60) {
+        resultMessageRef.innerHTML = `Well done, you got ${scorePercent}%, you made the cut!`;
+    } else if (scorePercent >= 40) {
+        resultMessageRef.innerHTML = `Hard luck, you got ${scorePercent}%, you didn't make the cut!`;
+    } else if (scorePercent >= 0) {
+        resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, they didn't really suit you!`;
+    }
 });
 
 
