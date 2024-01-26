@@ -16,13 +16,112 @@ const resultMessageRef = document.querySelector("#result-message");
 
 
 
-function startQuiz() {}
+function startQuiz() { }
 
-function displayShuffledQuestion() {}
+function displayShuffledQuestion() { }
 
-function showOptions() {}
+function showOptions() { }
 
-function selectAnswer() {}
+function selectAnswer() { }
 
-function increaseScore() {}
+function increaseScore() { }
+
+const questions = [
+
+    {
+        "question": "Tiger Woods memorably won by 12 shots in 1997. Who came second?",
+        "amswers": [
+            { "text": "Tom Weiskopt", "correct": true },
+            { "text": "Chris DiMarco", "correct": false },
+            { "text": "Tom Kite", "correct": false },
+            { "text": "Tom Watson", "correct": false }
+        ]
+    },
+    {
+        "question": "Jack Nicklaus won his 6th and final masters in 1986. What age was he?",
+        "amswers": [
+            { "text": "47", "correct": false },
+            { "text": "46", "correct": true },
+            { "text": "45", "correct": false },
+            { "text": "48", "correct": false }
+        ]
+    },
+    {
+        "question": "Rory McIlroy lost a four-stoke lead overnight in 2011. Who ended up winning?",
+        "amswers": [
+            { "text": "Adam Scott", "correct": false },
+            { "text": "Lee Westwood", "correct": false },
+            { "text": "Charl Schartzel", "correct": true },
+            { "text": "Louis Oosthuizen", "correct": false }
+        ]
+    },
+    {
+        "question": "Tiger Woods won in 2005 after a dramatic play-off. Who did he beat?",
+        "amswers": [
+            { "text": "Scott Verplan", "correct": false },
+            { "text": "Chad Campbell", "correct": false },
+            { "text": "Chris DiMarco", "correct": true },
+            { "text": "Ian Poulter", "correct": false }
+        ]
+    },
+    {
+        "question": "Jordan Spieth fell victim to the par 3 12th in 2016. What score did he have?",
+        "amswers": [
+            { "text": "6", "correct": false },
+            { "text": "7", "correct": true },
+            { "text": "9", "correct": false },
+            { "text": "8", "correct": false }
+        ]
+    },
+    {
+        "question": "Who is the youngest player to make the cut at Augusta?",
+        "amswers": [
+            { "text": "Matteo Manassero", "correct": false },
+            { "text": "Ryo Ishikawa", "correct": false },
+            { "text": "Guan Tianlang", "correct": true },
+            { "text": "Rory Mcllroy", "correct": false }
+        ]
+    },
+    {
+        "question": "Who was the first player to shoot 63 at the Masters?",
+        "amswers": [
+            { "text": "Jack Nicklaus", "correct": false },
+            { "text": "Nick Price", "correct": true },
+            { "text": "Ernie Els", "correct": false },
+            { "text": "Rory Mcllroy", "correct": false }
+        ]
+    },
+    {
+        "question": "When did Seve Ballesteros win his first Masters?",
+        "amswers": [
+            { "text": "1978", "correct": false },
+            { "text": "1980", "correct": true },
+            { "text": "1979", "correct": false },
+            { "text": "1981", "correct": false }
+        ]
+    },
+    {
+        "question": "Larry Mize won in 1987 after a three-man play-off. Along with Seve who was the third member?",
+        "amswers": [
+            { "text": "Ben Crenshaw", "correct": false },
+            { "text": "Greg Norman", "correct": true },
+            { "text": "Bernhard Langer", "correct": false },
+            { "text": "Sandy Lyle", "correct": false }
+        ]
+    },
+    {
+        "question": "Who does Gary Player share the record with for consecutive cuts made at the Masters?",
+        "amswers": [
+            { "text": "Nick Faldo", "correct": false },
+            { "text": "Rikki Rockett", "correct": false },
+            { "text": "Ian Woosnam", "correct": false },
+            { "text": "Fred Couples", "correct": true }
+        ]
+    }
+];
+
+
+
+
+
 
