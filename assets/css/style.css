@@ -53,3 +53,34 @@ body {
     text-align: center;
     border-radius: 3rem;
 }
+
+/*Instruction section*/
+#instructions-list {
+    text-align: left;
+    margin-left: 4.5rem;
+    padding: 0.5rem;
+    font-size: 1.75rem;
+}
+
+#name-box {
+    margin: 2.5rem 0;
+}
+
+.name-input,
+.btn,
+.option-btn,
+.restart-btn {
+    height: 3rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    color: var(--dark-black);
+    border-radius: 1rem;
+    background-color: lightgray;
+    border: 2px solid var(--dark-black);
+}
+
+
+
+.hide {
+    display: none;
+}
