@@ -27,19 +27,41 @@ function startQuiz() {
     } else {
         instructionsRef.classList.add('hide');
         quizContainerRef.classList.remove('hide');
-        userNameRef.innerHTML = nameRef.value;   
+        userNameRef.innerHTML = nameRef.value;
+        shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+        currentQuestionIndex = 0;
+        displayShuffledQuestion();
     }
 }
 
-function displayShuffledQuestion() {}
+function displayShuffledQuestion() {
+    resetState();
+    showOptions(shuffledQuestions[currentQuestionIndex]);
+}
 
-function showOptions(question) {}
+function showOptions(question) {
+    currentQuestionRef.innerHTML = currentQuestionIndex + 1;
+    quizQuestionRef.innerHTML = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerHTML = answer.text;
+        button.classList.add('option-btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
 
-function resetState() {}
+    });
+}
 
-function selectAnswer() {}
+function resetState() {
+    nextBtnRef.classList.add('hide');
+    while (optionsAreaRef.firstChild) {
+        optionsAreaRef.removeChild(optionsAreaRef.firstChild);
+    }
+}
+function selectAnswer() { }
 
-function increaseScore() {}
+function increaseScore() { }
 
 
 
