@@ -67,38 +67,53 @@ function selectAnswer(event) {
     const selectedButton = event.target;
     const correctOption = selectedButton.dataset.correct === 'true';
     const allOptions = optionsAreaRef.children.length;
-  
+
     for (let i = 0; i < allOptions; i++) {
-      const currentButton = optionsAreaRef.children[i];
-      const isCorrect = currentButton.dataset.correct === 'true';
-  
-      if (isCorrect) {
-        currentButton.style.backgroundColor = "green";
-      }
-      
+        const currentButton = optionsAreaRef.children[i];
+        const isCorrect = currentButton.dataset.correct === 'true';
+
+        if (isCorrect) {
+            currentButton.style.backgroundColor = "green";
+        }
+
     }
-  
+
     if (correctOption) {
-      selectedButton.style.backgroundColor = "green";
-      increaseScore();
-      score++
+        selectedButton.style.backgroundColor = "green";
+        increaseScore();
+        score++
     } else {
-      selectedButton.style.backgroundColor = "red";
-      
+        selectedButton.style.backgroundColor = "red";
+
     }
-  
+
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-      nextBtnRef.classList.remove('hide');
+        nextBtnRef.classList.remove('hide');
     } else {
-      resultsBtnRef.classList.remove('hide');
+        resultsBtnRef.classList.remove('hide');
     }
-  }
-  
-  /*Functions to increase scores*/
-  function increaseScore() {
+}
+
+/*Functions to increase scores*/
+function increaseScore() {
     let oldScore = parseInt(scoreRef.innerHTML);
     scoreRef.innerHTML = ++oldScore;
-  }
+}
+
+/*Evenet Listenereer for Next button*/
+nextBtnRef.addEventListener('click', function () {
+    currentQuestionIndex++;
+    displayShuffledQuestion();
+});
+
+
+/*Evenet Listenereer for Results button*/
+resultsBtnRef.addEventListener('click', function () {
+    quizContainerRef.classList.add('hide');
+    resultContainerRef.classList.remove('hide');
+    usernameResultRef.innerHTML = nameRef.value;
+});
+
 
 
 
