@@ -79,7 +79,49 @@ body {
     border: 2px solid var(--dark-black);
 }
 
+/*Quiz container section*/
+#welcome {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
 
+#question-counter {
+    margin: 0.5rem 0;
+}
+
+#quiz-question {
+    margin: 1rem 0;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.option-btn {
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--dark-black);
+    background-color: lightgray;
+}
+
+.nextquestion-btn,
+.results {
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    border-radius: 1rem;
+    background-color: var(--shadow-gray);
+    border: 2px solid var(--dark-black);
+    margin-bottom: 1rem;
+}
+
+/*Results container section*/
+#result-container {
+    margin: 5rem 0;
+    font-size: 3rem;
+}
+
+#restart-quiz {
+    margin-top: 5rem;
+}
 
 .hide {
     display: none;
