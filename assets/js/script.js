@@ -14,17 +14,36 @@ const scoreRef = document.querySelector("#score");
 const usernameResultRef = document.querySelector("#username-result");
 const resultMessageRef = document.querySelector("#result-message");
 
+/*Declaration of Global variables*/
+let shuffledQuestions;
+let currentQuestionIndex;
+
+/*Event Listeners to start quiz*/
+startQuizRef.addEventListener("click", startQuiz);
+
+function startQuiz() {
+    if (nameRef.value === '') {
+        alert("Please enter name before clicking Start Quiz button");
+    } else {
+        instructionsRef.classList.add('hide');
+        quizContainerRef.classList.remove('hide');
+        userNameRef.innerHTML = nameRef.value;   
+    }
+}
+
+function displayShuffledQuestion() {}
+
+function showOptions(question) {}
+
+function resetState() {}
+
+function selectAnswer() {}
+
+function increaseScore() {}
 
 
-function startQuiz() { }
 
-function displayShuffledQuestion() { }
 
-function showOptions() { }
-
-function selectAnswer() { }
-
-function increaseScore() { }
 
 const questions = [
 
