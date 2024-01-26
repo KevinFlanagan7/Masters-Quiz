@@ -75,6 +75,7 @@ function selectAnswer(event) {
         if (isCorrect) {
             currentButton.style.backgroundColor = "green";
         }
+        currentButton.disabled = true;
 
     }
 
