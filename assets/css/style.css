@@ -1,0 +1,55 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700&display=swap');
+
+/* Sets colours throughout website */
+:root {
+    --dark-green: #6e9075ff;
+    --dark-black: #000000;
+    --white: #F5F5F5;
+    --shadow-gray: #3a3a3a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* With Font size of 62.5%, 1rem equals 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merienda', sans-serif;
+    font-size: 1.6rem;
+    color: var(--dark-black);
+    background: url("../images/Augusta.webp") no-repeat center center/cover;
+    align-items: center;
+}
+
+#heading {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: rgba(110, 144, 117, 0.8);
+}
+
+#logo {
+    height: 6rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+#quiz-area {
+    position: absolute;
+    width: 80%;
+    height: 50rem;
+    top: 12rem;
+    background-color: rgba(110, 144, 117, 0.9);
+    text-align: center;
+    border-radius: 3rem;
+}
