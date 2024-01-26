@@ -17,6 +17,7 @@ const resultMessageRef = document.querySelector("#result-message");
 /*Declaration of Global variables*/
 let shuffledQuestions;
 let currentQuestionIndex;
+let score = 0;
 
 /*Event Listeners to start quiz*/
 startQuizRef.addEventListener("click", startQuiz);
@@ -49,6 +50,8 @@ function showOptions(question) {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
+        button.addEventListener('click', selectAnswer);
+        optionsAreaRef.appendChild(button);
 
     });
 }
@@ -59,9 +62,43 @@ function resetState() {
         optionsAreaRef.removeChild(optionsAreaRef.firstChild);
     }
 }
-function selectAnswer() { }
 
-function increaseScore() { }
+function selectAnswer(event) {
+    const selectedButton = event.target;
+    const correctOption = selectedButton.dataset.correct === 'true';
+    const allOptions = optionsAreaRef.children.length;
+  
+    for (let i = 0; i < allOptions; i++) {
+      const currentButton = optionsAreaRef.children[i];
+      const isCorrect = currentButton.dataset.correct === 'true';
+  
+      if (isCorrect) {
+        currentButton.style.backgroundColor = "green";
+      }
+      
+    }
+  
+    if (correctOption) {
+      selectedButton.style.backgroundColor = "green";
+      increaseScore();
+      score++
+    } else {
+      selectedButton.style.backgroundColor = "red";
+      
+    }
+  
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+      nextBtnRef.classList.remove('hide');
+    } else {
+      resultsBtnRef.classList.remove('hide');
+    }
+  }
+  
+  /*Functions to increase scores*/
+  function increaseScore() {
+    let oldScore = parseInt(scoreRef.innerHTML);
+    scoreRef.innerHTML = ++oldScore;
+  }
 
 
 
