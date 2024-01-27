@@ -16,6 +16,7 @@ const resultMessageRef = document.querySelector("#result-message");
 const correctSoundRef = document.querySelector("#correct-sound");
 const incorrectSoundRef = document.querySelector("#incorrect-sound");
 const muteBtnRef = document.querySelector("#mutebtn");
+const crowdApplauseRef = document.querySelector("#crowd-applause");
 
 /*Declaration of Global variables*/
 let questions = [];
