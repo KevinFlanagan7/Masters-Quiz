@@ -66,6 +66,24 @@ body {
     margin: 2.5rem 0;
 }
 
+#mutebtn {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-top: 1.5rem;
+    border-radius: 2rem;   
+    font-size: 2rem;
+    color: var(--dark-black);
+    border-radius: 3rem;
+    background-color: lightgray;
+    border: 2px solid var(--dark-black);
+    cursor: pointer;
+    outline: none;
+}
+
+.mute-icon {
+    outline: none;
+}
+
 .name-input,
 .btn,
 .option-btn,
