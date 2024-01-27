@@ -13,6 +13,8 @@ const currentQuestionRef = document.querySelector("#current-question");
 const scoreRef = document.querySelector("#score");
 const usernameResultRef = document.querySelector("#username-result");
 const resultMessageRef = document.querySelector("#result-message");
+const correctSoundRef = document.querySelector("#correct-sound");
+const incorrectSoundRef = document.querySelector("#incorrect-sound");
 
 /*Declaration of Global variables*/
 let questions = [];
@@ -80,10 +82,12 @@ const selectAnswer = (event) => {
 
     if (correctOption) {
         selectedButton.style.backgroundColor = "green";
+        correctSoundRef.play();
         increaseScore();
         score++
     } else {
         selectedButton.style.backgroundColor = "red";
+        incorrectSoundRef.play();
 
     }
 
