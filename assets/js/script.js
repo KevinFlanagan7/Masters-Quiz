@@ -15,13 +15,12 @@ const usernameResultRef = document.querySelector("#username-result");
 const resultMessageRef = document.querySelector("#result-message");
 
 /*Declaration of Global variables*/
+let questions = [];
 let shuffledQuestions;
 let currentQuestionIndex;
 let score = 0;
 
-/*Event Listeners to start quiz*/
 startQuizRef.addEventListener("click", startQuiz);
-
 function startQuiz() {
     if (nameRef.value === '') {
         alert("Please enter name before clicking Start Quiz button");
@@ -126,7 +125,7 @@ resultsBtnRef.addEventListener('click', function () {
     }
 });
 
-let questions = [];
+
 
 fetch("assets/data/questions.json")
     .then(response => {
@@ -137,6 +136,9 @@ fetch("assets/data/questions.json")
     });
 
 
+document.addEventListener("DOMContentLoaded", () => {
 
+    nameRef.focus();
 
+});
 
