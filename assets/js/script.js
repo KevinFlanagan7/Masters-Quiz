@@ -15,11 +15,13 @@ const usernameResultRef = document.querySelector("#username-result");
 const resultMessageRef = document.querySelector("#result-message");
 const correctSoundRef = document.querySelector("#correct-sound");
 const incorrectSoundRef = document.querySelector("#incorrect-sound");
+const muteBtnRef = document.querySelector("#muteBtn");
 
 /*Declaration of Global variables*/
 let questions = [];
 let shuffledQuestions;
 let currentQuestionIndex;
+let isMuted = false;
 
 const startQuiz = () => {
     if (nameRef.value === '') {
@@ -115,6 +117,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     nameRef.focus();
     startQuizRef.addEventListener("click", startQuiz);
+
+    muteBtnRef.addEventListener("click", () => {
+        if (isMuted) {
+            correctSoundRef.muted = false;
+            incorrectSoundRef.muted = false;
+            muteBtnRef.innerHTML = '<i class="fas fa-volume-up"></i>';
+        } else {
+            correctSoundRef.muted = true;
+            incorrectSoundRef.muted = true;
+            muteBtnRef.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        }
+        // Enables toggle state
+        isMuted = !isMuted;
+    });
 
     nextBtnRef.addEventListener('click', () => {
         currentQuestionIndex++;
