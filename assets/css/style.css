@@ -144,3 +144,128 @@ body {
 .hide {
     display: none;
 }
+
+/* Media query: large or landscape phones (576px and up) Masonary view */
+@media screen and (min-width: 576px) {
+
+    body {
+        background: url("../images/Augusta.webp") repeat center center/cover;
+    }
+
+    #quiz-question {
+        margin: 2rem 0;
+
+    }
+
+    .option-btn {
+        margin: 2rem;
+
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    #heading {
+        font-size: 3rem;
+    }
+
+    /*Instruction section*/
+    #instructions-list {
+        text-align: left;
+        margin-left: 14rem;
+        font-size: 2rem;
+    }
+
+    #name-box {
+        margin-top: 4rem;
+    }
+
+    .name-input,
+    .btn {
+        height: 3.5rem;
+        width: 25rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+
+    /*Quiz container section*/
+    #quiz-area {
+        top: 12rem;
+        height: 48rem;
+    }
+
+    #quiz-question {
+        margin: 3rem 0;
+        font-size: 2.5rem;
+    }
+
+    #options-area {
+        margin: 3rem 0;
+    }
+    #score-area {
+        font-size: 1.8rem;
+    }
+
+    .nextquestion-btn {
+        margin-bottom: 3rem;
+    }
+
+    .heading-h2 {
+        font-size: 3rem;
+    }
+
+    /*Results container section*/
+    #result-container {
+        margin: 10rem 0;
+    }
+
+    #result-message {
+        font-size: 2.5rem;
+    }
+
+    #restart-quiz {
+        margin-top: 10rem;
+    }
+
+    /*Results container section*/
+    #result-container {
+        margin: 10rem 0;
+        font-size: 3rem;
+    }
+
+    #restart-quiz {
+        margin-top: 8rem;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    #instructions-list {
+        margin-left: 15rem;
+    }
+
+    #quiz-area {
+        width: 70%;
+        height: 48rem;
+    }
+}
+
+/* Large devices (Desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    #instructions-list {
+        font-size: 2rem;
+    }
+
+    #name-box {
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    #quiz-area {
+        width: 60%;
+        height: 48rem;
+    }
+}
