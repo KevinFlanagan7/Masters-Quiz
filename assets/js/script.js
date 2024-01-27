@@ -126,7 +126,7 @@ resultsBtnRef.addEventListener('click', function () {
     }
 });
 
-const questions = [];
+let questions = [];
 
 fetch("assets/data/questions.json")
     .then(response => {
