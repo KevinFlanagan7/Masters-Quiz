@@ -20,8 +20,6 @@ const incorrectSoundRef = document.querySelector("#incorrect-sound");
 let questions = [];
 let shuffledQuestions;
 let currentQuestionIndex;
-let score = 0;
-
 
 const startQuiz = () => {
     if (nameRef.value === '') {
@@ -84,7 +82,7 @@ const selectAnswer = (event) => {
         selectedButton.style.backgroundColor = "green";
         correctSoundRef.play();
         increaseScore();
-        score++
+        
     } else {
         selectedButton.style.backgroundColor = "red";
         incorrectSoundRef.play();
@@ -100,8 +98,8 @@ const selectAnswer = (event) => {
 
 /*Functions to increase scores*/
 const increaseScore = () => {
-    let oldScore = parseInt(scoreRef.innerHTML);
-    scoreRef.innerHTML = ++oldScore;
+    let score = parseInt(scoreRef.innerHTML);
+    scoreRef.innerHTML = ++score;
 }
 
 fetch("assets/data/questions.json")
@@ -127,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         quizContainerRef.classList.add('hide');
         resultContainerRef.classList.remove('hide');
         usernameResultRef.innerHTML = nameRef.value;
-        const scorePercent = Math.round(100 * score / questions.length);
+        const scorePercent = Math.round(100 * scoreRef.innerHTML / questions.length);
         if (scorePercent >= 80) {
             resultMessageRef.innerHTML = `Congratulations, you got ${scorePercent}%, you are a Masters champion!`;
             crowdApplauseRef.play();
