@@ -17,6 +17,8 @@ const correctSoundRef = document.querySelector("#correct-sound");
 const incorrectSoundRef = document.querySelector("#incorrect-sound");
 const muteBtnRef = document.querySelector("#mutebtn");
 const crowdApplauseRef = document.querySelector("#crowd-applause");
+const crowdApplause1Ref = document.querySelector("#crowd-applause1");
+const crowdApplause2Ref = document.querySelector("#crowd-applause2");
 const restartQuizRef = document.querySelector("#restart-quiz");
 
 /*Declaration of Global variables*/
@@ -187,17 +189,17 @@ document.addEventListener("DOMContentLoaded", () => {
         resultContainerRef.classList.remove("hide");
         usernameResultRef.innerHTML = nameRef.value;
 
-        // Calculate the percentage score and displays result message with sound effects
+        // Calculate the percentage score and displays result message with sound effect
         const scorePercent = Math.round(100 * scoreRef.innerHTML / questions.length);
         if (scorePercent >= 80) {
             resultMessageRef.innerHTML = `Congratulations, you got ${scorePercent}%, you are a Masters champion!`;
             crowdApplauseRef.play();
         } else if (scorePercent >= 60) {
             resultMessageRef.innerHTML = `Well done, you got ${scorePercent}%, you made the cut!`;
-        } else if (scorePercent >= 40) {
-            resultMessageRef.innerHTML = `Hard luck, you got ${scorePercent}%, you didn"t make the cut!`;
+            crowdApplause1Ref.play();
         } else if (scorePercent >= 0) {
-            resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, they didn"t really suit you!`;
+            resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, you didn't make the cut!`;
+            crowdApplause2Ref.play();
         }
     });
 
