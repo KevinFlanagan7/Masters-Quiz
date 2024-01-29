@@ -19,6 +19,7 @@ const muteBtnRef = document.querySelector("#mutebtn");
 const crowdApplauseRef = document.querySelector("#crowd-applause");
 const crowdApplause1Ref = document.querySelector("#crowd-applause1");
 const crowdApplause2Ref = document.querySelector("#crowd-applause2");
+const mastersThemeRef = document.querySelector("#masters-theme");
 const restartQuizRef = document.querySelector("#restart-quiz");
 
 /*Declaration of Global variables*/
@@ -43,6 +44,7 @@ const startQuiz = () => {
         shuffledQuestions = questions.sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
         displayShuffledQuestion();
+        mastersThemeRef.play();
     }
 }
 
