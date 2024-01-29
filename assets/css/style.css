@@ -95,6 +95,8 @@ body {
     border-radius: 1rem;
     background-color: lightgray;
     border: 2px solid var(--dark-black);
+    cursor: pointer;
+    outline: none;
 }
 
 /*Quiz container section*/
@@ -129,6 +131,7 @@ body {
     background-color: var(--shadow-gray);
     border: 2px solid var(--dark-black);
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 /*Results container section*/
