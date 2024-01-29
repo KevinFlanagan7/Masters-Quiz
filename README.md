@@ -168,7 +168,6 @@ The wireframes are below:
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview "Lighthouse")
 * [Coolers](https://coolors.co/ "Coolers")
-* [Box Shadow Generator](https://html-css-js.com/css/generator/box-shadow/ "html-css-js.com")
 * [Am I Responsive](https://ui.dev/amiresponsive "Am I Responsive")
 
 \
@@ -247,6 +246,10 @@ For help and advice:
 
 - [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
 
+For Landing page image and Logo:
+
+- [Pinterest](https://www.pinterest.ie/pin/758926974676546644 "Pinterest")
+
 Code inspiration for Increasing score:
 
 - [Love Maths Project From Codeinstitute](https://codeinstitute.net "Love Maths Project")
@@ -257,12 +260,14 @@ Code inspiration for displaying quiz questions and options:
 
 Code inspiration for mute toggle:
 
-- [Youtube Mute button tutorial.](https://www.youtube.com/watch?v=hsSXzdn_0Gg "Youtube")
+- [Youtube Mute button tutorial](https://www.youtube.com/watch?v=hsSXzdn_0Gg "Youtube")
+
+My kids for sound effects and Epidemic Sound website:
+- [Epidemic Sound](https://www.epidemicsound.com/sound-effects "Youtube")
 
 
-For Landing page image:
 
-- [Pinterest](https://www.pinterest.ie/pin/758926974676546644 "Pinterest")
+
 
 
 \
