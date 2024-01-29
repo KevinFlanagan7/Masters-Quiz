@@ -1,11 +1,11 @@
 /*Declaration of Global constants*/
-const startQuizRef = document.querySelector('#startquiz');
-const instructionsRef = document.querySelector('#instructions');
-const quizContainerRef = document.querySelector('#quiz-container');
-const quizQuestionRef = document.querySelector('#quiz-question');
-const nextBtnRef = document.querySelector('#next-btn');
-const resultsBtnRef = document.querySelector('#results-btn');
-const optionsAreaRef = document.querySelector('#options-area');
+const startQuizRef = document.querySelector("#startquiz");
+const instructionsRef = document.querySelector("#instructions");
+const quizContainerRef = document.querySelector("#quiz-container");
+const quizQuestionRef = document.querySelector("#quiz-question");
+const nextBtnRef = document.querySelector("#next-btn");
+const resultsBtnRef = document.querySelector("#results-btn");
+const optionsAreaRef = document.querySelector("#options-area");
 const nameRef = document.querySelector("#name");
 const resultContainerRef = document.querySelector("#result-container");
 const userNameRef = document.querySelector("#username");
@@ -17,19 +17,22 @@ const correctSoundRef = document.querySelector("#correct-sound");
 const incorrectSoundRef = document.querySelector("#incorrect-sound");
 const muteBtnRef = document.querySelector("#mutebtn");
 const crowdApplauseRef = document.querySelector("#crowd-applause");
+const restartQuizRef = document.querySelector("#restart-quiz");
 
 /*Declaration of Global variables*/
 let questions = [];
 let shuffledQuestions;
 let currentQuestionIndex;
 let isMuted = false;
+let homePage = "index.html";
+
 
 const startQuiz = () => {
-    if (nameRef.value === '') {
+    if (nameRef.value === "") {
         alert("Please enter name before clicking Start Quiz button");
     } else {
-        instructionsRef.classList.add('hide');
-        quizContainerRef.classList.remove('hide');
+        instructionsRef.classList.add("hide");
+        quizContainerRef.classList.remove("hide");
         userNameRef.innerHTML = nameRef.value;
         shuffledQuestions = questions.sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
@@ -46,20 +49,20 @@ const showOptions = (question) => {
     currentQuestionRef.innerHTML = currentQuestionIndex + 1;
     quizQuestionRef.innerHTML = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button');
+        const button = document.createElement("button");
         button.innerHTML = answer.text;
-        button.classList.add('option-btn');
+        button.classList.add("option-btn");
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer);
+        button.addEventListener("click", selectAnswer);
         optionsAreaRef.appendChild(button);
 
     });
 }
 
 const resetState = () => {
-    nextBtnRef.classList.add('hide');
+    nextBtnRef.classList.add("hide");
     while (optionsAreaRef.firstChild) {
         optionsAreaRef.removeChild(optionsAreaRef.firstChild);
     }
@@ -67,12 +70,12 @@ const resetState = () => {
 
 const selectAnswer = (event) => {
     const selectedButton = event.target;
-    const correctOption = selectedButton.dataset.correct === 'true';
+    const correctOption = selectedButton.dataset.correct === "true";
     const allOptions = optionsAreaRef.children.length;
 
     for (let i = 0; i < allOptions; i++) {
         const currentButton = optionsAreaRef.children[i];
-        const isCorrect = currentButton.dataset.correct === 'true';
+        const isCorrect = currentButton.dataset.correct === "true";
 
         if (isCorrect) {
             currentButton.style.backgroundColor = "green";
@@ -85,7 +88,7 @@ const selectAnswer = (event) => {
         selectedButton.style.backgroundColor = "green";
         correctSoundRef.play();
         increaseScore();
-        
+
     } else {
         selectedButton.style.backgroundColor = "red";
         incorrectSoundRef.play();
@@ -93,9 +96,9 @@ const selectAnswer = (event) => {
     }
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextBtnRef.classList.remove('hide');
+        nextBtnRef.classList.remove("hide");
     } else {
-        resultsBtnRef.classList.remove('hide');
+        resultsBtnRef.classList.remove("hide");
     }
 }
 
@@ -133,14 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
         isMuted = !isMuted;
     });
 
-    nextBtnRef.addEventListener('click', () => {
+    nextBtnRef.addEventListener("click", () => {
         currentQuestionIndex++;
         displayShuffledQuestion();
     });
 
-    resultsBtnRef.addEventListener('click', () => {
-        quizContainerRef.classList.add('hide');
-        resultContainerRef.classList.remove('hide');
+    resultsBtnRef.addEventListener("click", () => {
+        quizContainerRef.classList.add("hide");
+        resultContainerRef.classList.remove("hide");
         usernameResultRef.innerHTML = nameRef.value;
         const scorePercent = Math.round(100 * scoreRef.innerHTML / questions.length);
         if (scorePercent >= 80) {
@@ -149,10 +152,14 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (scorePercent >= 60) {
             resultMessageRef.innerHTML = `Well done, you got ${scorePercent}%, you made the cut!`;
         } else if (scorePercent >= 40) {
-            resultMessageRef.innerHTML = `Hard luck, you got ${scorePercent}%, you didn't make the cut!`;
+            resultMessageRef.innerHTML = `Hard luck, you got ${scorePercent}%, you didn"t make the cut!`;
         } else if (scorePercent >= 0) {
-            resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, they didn't really suit you!`;
+            resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, they didn"t really suit you!`;
         }
+    });
+
+    restartQuizRef.addEventListener("click", () => {
+        window.location.href = homePage;
     });
 });
 
