@@ -169,12 +169,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     muteBtnRef.addEventListener("click", () => {
         if (isMuted) {
+            mastersThemeRef.muted = false;
             correctSoundRef.muted = false;
             incorrectSoundRef.muted = false;
+            crowdApplauseRef.muted = false;
+            crowdApplause1Ref.muted = false;
+            crowdApplause2Ref.muted = false;
             muteBtnRef.innerHTML = '<i class="fas fa-volume-up"></i>';
         } else {
+            mastersThemeRef.muted = true;
             correctSoundRef.muted = true;
             incorrectSoundRef.muted = true;
+            crowdApplauseRef.muted = true;
+            crowdApplause1Ref.muted = true;
+            crowdApplause2Ref.muted = true;
             muteBtnRef.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
         }
         // Enables mute toggle state
