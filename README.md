@@ -247,6 +247,23 @@ For help and advice:
 
 - [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
 
+Code inspiration for Increasing score:
+
+- [Love Maths Project From Codeinstitute](https://codeinstitute.net "Love Maths Project")
+
+Code inspiration for displaying quiz questions and options:
+
+- [Youtube Web Dev Simplified tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k "Youtube")
+
+Code inspiration for mute toggle:
+
+- [Youtube Mute button tutorial.](https://www.youtube.com/watch?v=hsSXzdn_0Gg "Youtube")
+
+
+For Landing page image:
+
+- [Pinterest](https://www.pinterest.ie/pin/758926974676546644 "Pinterest")
+
 
 \
 &nbsp;
