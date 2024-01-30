@@ -148,13 +148,17 @@ The wireframes are below:
 
     <details><summary>Screenshots</summary>
 
+
     *Mobile*
+
     ![Landing Page Mobile](/documentation/landing-mobile.png)
 
     *Tablet*
+
     ![Landing Page Tablet](/documentation/landing-tablet.png)
 
     *Desktop*
+
     ![Landing Page Desktop](/documentation/landing-desktop.png)
 
 
@@ -170,7 +174,17 @@ The wireframes are below:
 - It contains an input field for the players name which has to be entered before starting the quiz.
 
     *Name Validation*
+
     ![Landing Page Mobile](/documentation/name-validation.png)
+
+- Once the player's name has been entered the quiz can be started to the sound of the Masters theme tune for added user experience.
+- There is the optional mute button so the user can mute game audio if they want to play in a quiet area.
+- The cursor is set to be in name input field once pages loads for user convenience.
+- There is a pointer configured to appear once you scroll over input field, Start Quiz and Mute icon.
+
+    *Pointer*
+
+    ![Pointer]()
 
     
 
@@ -190,6 +204,7 @@ The wireframes are below:
 
 * [HTML](https://en.wikipedia.org/wiki/HTML "HTML")
 * [CSS](https://en.wikipedia.org/wiki/CSS "CSS")
+* [JS](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Libraries & Framework
 * [Google Fonts](https://fonts.google.com/ "Google Fonts")
