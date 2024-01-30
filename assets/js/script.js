@@ -118,7 +118,7 @@ const selectAnswer = (event) => {
         const isCorrect = currentButton.dataset.correct === "true";
 
         if (isCorrect) {
-            currentButton.style.backgroundColor = "green";
+            currentButton.style.backgroundColor = "#228C22";
         }
         // Disables options buttons once selected so score is correct
         currentButton.disabled = true;
@@ -126,12 +126,12 @@ const selectAnswer = (event) => {
 
     // Visual and audio feedback for the selected answer
     if (correctOption) {
-        selectedButton.style.backgroundColor = "green";
+        selectedButton.style.backgroundColor = "#228C22";
         correctSoundRef.play();
         increaseScore();
 
     } else {
-        selectedButton.style.backgroundColor = "red";
+        selectedButton.style.backgroundColor = "#E10000";
         incorrectSoundRef.play();
     }
 
