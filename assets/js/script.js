@@ -21,18 +21,50 @@ const secondApplauseRef = document.querySelector("#second-applause");
 const thirdApplauseRef = document.querySelector("#third-applause");
 const mastersThemeRef = document.querySelector("#masters-theme");
 const restartQuizRef = document.querySelector("#restart-quiz");
+const shuffledQuestions = [];
+const homePage = "index.html";
 
 /*Declaration of Global variables*/
 let questions = [];
-const shuffledQuestions = [];
 let currentQuestionIndex;
 let isMuted = false;
-const homePage = "index.html";
 
 /**
- * Function to start the quiz.
+ * Fetch API to get Quiz questions from the local JSON file in the data folder.
+ *  It loads the questions and assigns them to the global variable "questions" array. 
+ */
+fetch("assets/data/questions.json")
+    .then(response => response.json())
+    .then(loadedQuestions => questions = loadedQuestions);
+
+/**
+ * It hides the "Next" button and removes all child elements from the options area.
+ */
+const resetState = () => {
+    nextBtnRef.classList.add("hide");
+    while (optionsAreaRef.firstChild) {
+        optionsAreaRef.removeChild(optionsAreaRef.firstChild);
+    }
+}
+
+/**
+ * It resets the state and then shows the options for the current question.
+ */
+const displayShuffledQuestion = () => {
+    resetState();
+    showOptions(shuffledQuestions[currentQuestionIndex]);
+}
+
+/**
+ * It increments the current score and updates the score display in the UI.
+ */
+const increaseScore = () => {
+    let score = parseInt(scoreRef.innerHTML);
+    scoreRef.innerHTML = ++score;
+}
+
+/**
  * If the name is not entered, it shows an alert, otherwise, it initializes the quiz.
- * @param
  */
 const startQuiz = () => {
     if (nameInputRef.value === "") {
@@ -45,28 +77,6 @@ const startQuiz = () => {
         currentQuestionIndex = 0;
         displayShuffledQuestion();
         mastersThemeRef.play();
-    }
-}
-
-/**
- * Function to display a shuffled question.
- * It resets the state and then shows the options for the current question.
- * @param
- */
-const displayShuffledQuestion = () => {
-    resetState();
-    showOptions(shuffledQuestions[currentQuestionIndex]);
-}
-
-/**
- * Function to reset the state of the quiz.
- * It hides the "Next" button and removes all child elements from the options area.
- * @param
- */
-const resetState = () => {
-    nextBtnRef.classList.add("hide");
-    while (optionsAreaRef.firstChild) {
-        optionsAreaRef.removeChild(optionsAreaRef.firstChild);
     }
 }
 
@@ -134,38 +144,16 @@ const selectAnswer = (event) => {
 }
 
 /**
- * Function to increase the quiz score.
- * It increments the current score and updates the score display in the UI.
- * @param
- */
-const increaseScore = () => {
-    let score = parseInt(scoreRef.innerHTML);
-    scoreRef.innerHTML = ++score;
-}
-
-/**
- * Fetch API to get Quiz questions from the local JSON file in the data folder.
- *  It loads the questions and assigns them to the global variable "questions" array. 
- */
-fetch("assets/data/questions.json")
-    .then(response => {
-        return response.json();
-    })
-    .then(loadedQuestions => {
-        questions = loadedQuestions;
-    });
-
-/**
  * Event listener for the "DOMContentLoaded" event.
- * It initializes quiz event listeners (startQuiz, mute, next, results & restart quiz buttons) when the DOM is fully loaded.
+ * It initializes quiz event listeners (startQuiz, mute, next, results & restart quiz buttons) 
+ * when the DOM is fully loaded.
  * @param {Event} event - The DOMContentLoaded event.
  */
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Set cursor focus in the name input box when the page loads
     nameInputRef.focus();
-
     startQuizRef.addEventListener("click", startQuiz);
+    restartQuizRef.addEventListener("click", () => window.location.href = homePage);
 
     muteBtnRef.addEventListener("click", () => {
         if (isMuted) {
@@ -199,7 +187,6 @@ document.addEventListener("DOMContentLoaded", () => {
         resultContainerRef.classList.remove("hide");
         usernameResultRef.innerHTML = nameInputRef.value;
 
-        // Calculate the percentage score and displays result message with sound effect
         const scorePercent = Math.round(100 * scoreRef.innerHTML / questions.length);
         if (scorePercent >= 80) {
             resultMessageRef.innerHTML = `Congratulations, you got ${scorePercent}%, you are a Masters champion!`;
@@ -211,10 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
             resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, you didn't make the cut!`;
             thirdApplauseRef.play();
         }
-    });
-
-    restartQuizRef.addEventListener("click", () => {
-        window.location.href = homePage;
     });
 });
 
