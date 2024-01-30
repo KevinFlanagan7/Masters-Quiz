@@ -86,7 +86,7 @@ I have used icons for my website from the [Font Awesome library](https://fontawe
 
 
 ### Colours
-I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize, results for  background can been viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour") and for the white background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour").
+I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize, results for green background can be viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour"), results for light gray background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour"), results for correct answer background can be viewed here [here](https://coolors.co/contrast-checker/000000-228C22 "Adjusted colour") results for incorrect answer background can be viewed here [here](https://coolors.co/contrast-checker/000000-e10000 "Adjusted colour")
 
 ![Colour Pallet](/documentation/project-colors.png)
 
