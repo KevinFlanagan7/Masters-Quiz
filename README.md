@@ -146,24 +146,33 @@ The wireframes are below:
 - The Masters logo is under the headings and doubles as a link back to the landing page.
 - The Heading, backgroud image and logo are always present during the quiz.
 
-<details><summary>Screenshots</summary>
+    <details><summary>Screenshots</summary>
 
-*Mobile*
-![Landing Page Mobile](/documentation/landing-mobile.png)
+    *Mobile*
+    ![Landing Page Mobile](/documentation/landing-mobile.png)
 
-*Tablet*
-![Landing Page Tablet](/documentation/landing-tablet.png)
+    *Tablet*
+    ![Landing Page Tablet](/documentation/landing-tablet.png)
 
-*Desktop*
-![Landing Page Desktop](/documentation/landing-desktop.png)
-
-
+    *Desktop*
+    ![Landing Page Desktop](/documentation/landing-desktop.png)
 
 
-
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Instructions Section
 
+- The Instructions area of the Landing page gives clear instructions how to play quiz.
+- It contains an input field for the players name which has to be entered before starting the quiz.
+
+    *Name Validation*
+    ![Landing Page Mobile](/documentation/name-validation.png)
+
+    
 
 ### Quiz Section
 
@@ -288,10 +297,6 @@ Code inspiration for mute toggle:
 
 My kids for sound effects and Epidemic Sound website:
 - [Epidemic Sound](https://www.epidemicsound.com/sound-effects "Youtube")
-
-
-
-
 
 
 \
