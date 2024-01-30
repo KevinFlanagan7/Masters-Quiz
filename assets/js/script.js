@@ -81,7 +81,6 @@ const startQuiz = () => {
 }
 
 /**
- * Function to display options for a given question.
  * It updates the UI with the current question number, question text, and answer buttons.
  * @param {Object} question - The question object containing the question text and answers.
  */
@@ -97,12 +96,10 @@ const showOptions = (question) => {
         }
         button.addEventListener("click", selectAnswer);
         optionsAreaRef.appendChild(button);
-
     });
 }
 
 /**
- * Function to handle the selection of an answer.
  * It visually indicates correct and incorrect answers, plays sounds, updates the score, 
  * and shows the "Next" or "Results" button based on the current question index.
  * @param {Event} event - The click event object.
@@ -129,7 +126,6 @@ const selectAnswer = (event) => {
         selectedButton.style.backgroundColor = "#228C22";
         correctSoundRef.play();
         increaseScore();
-
     } else {
         selectedButton.style.backgroundColor = "#E10000";
         incorrectSoundRef.play();
