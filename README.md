@@ -4,7 +4,7 @@
 
 ## Goal for this Project
 
-Welcome to the Masters Golf Quiz website. This site's goal is to challenge your golf knowledge of the famous Masters golf tournament. 
+Welcome to the Masters Golf Quiz website. This site's goal is to challenge your golf knowledge of the famous Masters golf tournament with a fun and interactive quiz. 
 
 ![Responsive Displays](/documentation/amiresponsive.png)
 
@@ -14,11 +14,8 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 - [Goal for this Project](#goal-for-this-project)
 - [Table of Contents](#table-of-contents)
 - [UX](#ux)
-  - [User Goals](#user-goals)
   - [User Stories](#user-stories)
-  - [Site owners Goals](#site-owners-goals)
-    - [Requirements](#requirements)
-    - [Expectations](#expectations)
+  - [Design](#design)
     - [Fonts](#fonts)
     - [Icons](#icons)
     - [Colours](#colours)
@@ -55,20 +52,22 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 
 ## UX
 
-## User Goals
-
-
-
 ## User Stories
+* As a user, I want the quiz to be responsive to my devices.
 
-## Site owners Goals
+* As a user, I want clear instructions how to play quiz.
 
-### Requirements
+* As a user, I want to easily navigate through quiz.
 
+* As a user, I want to know if I selected the correct answer.
 
+* As a user,  I want to know what the correct answer is if I selected wrong answer. 
 
-### Expectations
+* As a user,  I want to know what question number I am on during quiz.
 
+* As a user, I want to know my score during quiz.
+
+* As a user,  I want to know my final score with some feedback.
 
 
 \
@@ -77,14 +76,27 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 \
 &nbsp;
 
+## Design
+
 ### Fonts
-
-
+I have used [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a text that best suits the feel of the website. For the main text I have chosen [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=Golf%20Classic&query=merienda) as I feel it is has a sharp, simple and easy to read look.
 
 ### Icons
+I have used icons for my website from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). These iclude the icons to give the user the option mute and unmute the quiz sounds. 
 
 
 ### Colours
+I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize, results for  background can been viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour") and for the white background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour").
+
+![Colour Pallet](/documentation/project-colors.png)
+
+- #6e9075 - This colour will be used as the main background colour with opacity of 0.9.
+- #F5F5F5 - This colour will be used as text colour in Next button.
+- #000000 - This colour will be used as text colour in quiz buttons.
+- #3a3a3a - This colour will be used for background color of Next button.
+- #228C22 - This colour will be used for correct answers.
+- #E10000 - This colour will be used for incorrect answers.
+
 
 
 
