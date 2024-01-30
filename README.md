@@ -10,7 +10,7 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 
 ## Table of Contents
 
-- [Masters Golf Quiz](#masters-golf=quiz)
+- [Masters Golf Quiz](#masters-golf-quiz)
 - [Goal for this Project](#goal-for-this-project)
 - [Table of Contents](#table-of-contents)
 - [UX](#ux)
@@ -26,12 +26,10 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
     - [Desktop Wireframe](#desktop-wireframe)
 - [Features](#features)
     - [Existing Features](#existing-features)
-        - [Heading](#heading)
         - [Landing Page](#landing-page)
         - [Instructions Section](#instructions-section)
         - [Quiz Section](#quiz-section)
         - [Results Section](#results-section)
-        - [Footer](#footer)
     - [Features to be implemented](#features-to-be-implemented)
 - [Technologies used](#technologies-used)
     - [Languages](#languages)
@@ -53,6 +51,7 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 ## UX
 
 ## User Stories
+
 * As a user, I want the quiz to be responsive to my devices.
 
 * As a user, I want clear instructions how to play quiz.
@@ -69,7 +68,6 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 
 * As a user,  I want to know my final score with some feedback.
 
-
 \
 &nbsp;
 [Back to Top](#table-of-contents)
@@ -79,14 +77,16 @@ Welcome to the Masters Golf Quiz website. This site's goal is to challenge your 
 ## Design
 
 ### Fonts
+
 I have used [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a text that best suits the feel of the website. For the main text I have chosen [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=Golf%20Classic&query=merienda) as I feel it is has a sharp, simple and easy to read look.
 
 ### Icons
-I have used icons for my website from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). These iclude the icons to give the user the option mute and unmute the quiz sounds. 
 
+I have used icons for my website from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). These iclude the icons to give the user the option to mute and unmute the quiz sounds. 
 
 ### Colours
-I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize, results for green background can be viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour"), results for light gray background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour"), results for correct answer background can be viewed here [here](https://coolors.co/contrast-checker/000000-228C22 "Adjusted colour") results for incorrect answer background can be viewed here [here](https://coolors.co/contrast-checker/000000-e10000 "Adjusted colour")
+
+I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize, results for green background can be viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour"), results for light gray background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour"), results for correct answer background can be viewed [here](https://coolors.co/contrast-checker/000000-228C22 "Adjusted colour"), results for incorrect answer background can be viewed  [here](https://coolors.co/contrast-checker/000000-e10000 "Adjusted colour").
 
 ![Colour Pallet](/documentation/project-colors.png)
 
@@ -96,9 +96,6 @@ I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of
 - #3a3a3a - This colour will be used for background color of Next button.
 - #228C22 - This colour will be used for correct answers.
 - #E10000 - This colour will be used for incorrect answers.
-
-
-
 
 ### Structure
 
@@ -120,7 +117,7 @@ I will be building my website with a mobile first mindset using the Samsung Gala
 
 ## Wireframes
 
-I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes for my website. The sections include landing page with Instructions, the quiz area and the results area.
+I used [Balsamic](https://balsamiq.com/wireframes/) to develop my wireframes. The sections include landing page with Instructions section, the quiz area section and the results area section.
 
 The wireframes are below:
 
@@ -141,15 +138,11 @@ The wireframes are below:
 
 ## Existing Features
 
-### Heading
-
   
 ### Landing Page
 
 
-
 ### Instructions Section
-
 
 
 ### Quiz Section
@@ -157,8 +150,6 @@ The wireframes are below:
 
 ### Results Section
 
-
-### Footer
 
 
 ## Features to be Implemented
