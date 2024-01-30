@@ -141,6 +141,26 @@ The wireframes are below:
   
 ### Landing Page
 
+- The landing page includes a background image of the iconic 12th hole of Augusta National golf course which adds to the users visual experience.
+- The landing page contains the Header to let the user know that they have arrived at the The Masters Quiz website.
+- The Masters logo is under the headings and doubles as a link back to the landing page.
+- The Heading, backgroud image and logo are always present during the quiz.
+
+<details><summary>Screenshots</summary>
+
+*Mobile*
+![Landing Page Mobile](/documentation/landing-mobile.png)
+
+*Tablet*
+![Landing Page Tablet](/documentation/landing-tablet.png)
+
+*Desktop*
+![Landing Page Desktop](/documentation/landing-desktop.png)
+
+
+
+
+
 
 ### Instructions Section
 
@@ -172,6 +192,7 @@ The wireframes are below:
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview "Lighthouse")
 * [Coolers](https://coolors.co/ "Coolers")
 * [Am I Responsive](https://ui.dev/amiresponsive "Am I Responsive")
+* [Favicon Converter](https://favicon.io/favicon-converter/ "Favicon Converter")
 
 \
 &nbsp;
