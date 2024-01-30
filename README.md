@@ -6,7 +6,7 @@
 
 Welcome to the Masters Golf Quiz website. This site's goal is to challenge your golf knowledge of the famous Masters golf tournament with a fun and interactive quiz. 
 
-![Responsive Displays](/documentation/amiresponsive.png)
+![Responsive Displays](/documentation/am-i-responsive.png)
 
 ## Table of Contents
 
