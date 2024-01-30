@@ -6,7 +6,7 @@ const quizQuestionRef = document.querySelector("#quiz-question");
 const nextBtnRef = document.querySelector("#next-btn");
 const resultsBtnRef = document.querySelector("#results-btn");
 const optionsAreaRef = document.querySelector("#options-area");
-const nameRef = document.querySelector("#name");
+const nameInputRef = document.querySelector("#name");
 const resultContainerRef = document.querySelector("#result-container");
 const userNameRef = document.querySelector("#username");
 const currentQuestionRef = document.querySelector("#current-question");
@@ -16,9 +16,9 @@ const resultMessageRef = document.querySelector("#result-message");
 const correctSoundRef = document.querySelector("#correct-sound");
 const incorrectSoundRef = document.querySelector("#incorrect-sound");
 const muteBtnRef = document.querySelector("#mutebtn");
-const crowdApplauseRef = document.querySelector("#crowd-applause");
-const crowdApplause1Ref = document.querySelector("#crowd-applause1");
-const crowdApplause2Ref = document.querySelector("#crowd-applause2");
+const firstApplauseRef = document.querySelector("#first-applause");
+const secondApplauseRef = document.querySelector("#second-applause");
+const thirdApplauseRef = document.querySelector("#third-applause");
 const mastersThemeRef = document.querySelector("#masters-theme");
 const restartQuizRef = document.querySelector("#restart-quiz");
 
@@ -35,12 +35,12 @@ let homePage = "index.html";
  * @param
  */
 const startQuiz = () => {
-    if (nameRef.value === "") {
+    if (nameInputRef.value === "") {
         alert("Please enter name before clicking Start Quiz button");
     } else {
         instructionsRef.classList.add("hide");
         quizContainerRef.classList.remove("hide");
-        userNameRef.innerHTML = nameRef.value;
+        userNameRef.innerHTML = nameInputRef.value;
         shuffledQuestions = questions.sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
         displayShuffledQuestion();
@@ -163,7 +163,7 @@ fetch("assets/data/questions.json")
 document.addEventListener("DOMContentLoaded", () => {
 
     // Set cursor focus in the name input box when the page loads
-    nameRef.focus();
+    nameInputRef.focus();
 
     startQuizRef.addEventListener("click", startQuiz);
 
@@ -172,17 +172,17 @@ document.addEventListener("DOMContentLoaded", () => {
             mastersThemeRef.muted = false;
             correctSoundRef.muted = false;
             incorrectSoundRef.muted = false;
-            crowdApplauseRef.muted = false;
-            crowdApplause1Ref.muted = false;
-            crowdApplause2Ref.muted = false;
+            firstApplauseRef.muted = false;
+            secondApplauseRef.muted = false;
+            thirdApplauseRef.muted = false;
             muteBtnRef.innerHTML = '<i class="fas fa-volume-up"></i>';
         } else {
             mastersThemeRef.muted = true;
             correctSoundRef.muted = true;
             incorrectSoundRef.muted = true;
-            crowdApplauseRef.muted = true;
-            crowdApplause1Ref.muted = true;
-            crowdApplause2Ref.muted = true;
+            firstApplauseRef.muted = true;
+            secondApplauseRef.muted = true;
+            thirdApplauseRef.muted = true;
             muteBtnRef.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
         }
         // Enables mute toggle state
@@ -197,19 +197,19 @@ document.addEventListener("DOMContentLoaded", () => {
     resultsBtnRef.addEventListener("click", () => {
         quizContainerRef.classList.add("hide");
         resultContainerRef.classList.remove("hide");
-        usernameResultRef.innerHTML = nameRef.value;
+        usernameResultRef.innerHTML = nameInputRef.value;
 
         // Calculate the percentage score and displays result message with sound effect
         const scorePercent = Math.round(100 * scoreRef.innerHTML / questions.length);
         if (scorePercent >= 80) {
             resultMessageRef.innerHTML = `Congratulations, you got ${scorePercent}%, you are a Masters champion!`;
-            crowdApplauseRef.play();
+            firstApplauseRef.play();
         } else if (scorePercent >= 60) {
             resultMessageRef.innerHTML = `Well done, you got ${scorePercent}%, you made the cut!`;
-            crowdApplause1Ref.play();
+            secondApplauseRef.play();
         } else if (scorePercent >= 0) {
             resultMessageRef.innerHTML = `Unfortunatley, you only got ${scorePercent}%, you didn't make the cut!`;
-            crowdApplause2Ref.play();
+            thirdApplauseRef.play();
         }
     });
 
