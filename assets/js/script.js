@@ -24,10 +24,10 @@ const restartQuizRef = document.querySelector("#restart-quiz");
 
 /*Declaration of Global variables*/
 let questions = [];
-let shuffledQuestions;
+const shuffledQuestions = [];
 let currentQuestionIndex;
 let isMuted = false;
-let homePage = "index.html";
+const homePage = "index.html";
 
 /**
  * Function to start the quiz.
@@ -41,7 +41,7 @@ const startQuiz = () => {
         instructionsRef.classList.add("hide");
         quizContainerRef.classList.remove("hide");
         userNameRef.innerHTML = nameInputRef.value;
-        shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+        shuffledQuestions.push(...questions.sort(() => Math.random() - 0.5));
         currentQuestionIndex = 0;
         displayShuffledQuestion();
         mastersThemeRef.play();
