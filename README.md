@@ -186,16 +186,17 @@ The wireframes are below:
 
     *Pointer Video*
 
-    ![Pointer](/documentation/instructions-pointer.mp4)
+    <video src="documentation/instructions-pointer.mp4" controls title="Pointer Video"></video>
 
     
 
 ### Quiz Section
 
-- The quiz area contains a personaised welcome message to the player by using the name that was entered into the name input field.
-- It has the current question numer that you on out of 10 questions in the quiz.
-- It has the current question and the and the four options for that question.
+- The quiz area contains a personalized welcome message to the player by using the name that was entered into the name input field.
+- It has the current question number that you are on out of 10 questions in the quiz.
+- It has the current question and the the four options for that question.
 - Underneath the options it has the users current score for the question they are on.
+- Each button had a pointer configured to appear once user scrolls over.
 
     <details><summary>Screenshots</summary>
 
@@ -210,6 +211,47 @@ The wireframes are below:
     *Quiz Area Desktop*
 
     ![Desktop](/documentation/quiz-area-desktop.png)
+
+    *Quiz Area Pointer Video*
+
+    <video src="documentation/quiz-area-pointer.mp4" controls title="Quiz Area Pointer"></video>
+
+- If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
+- The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
+
+    <details><summary>Screenshots</summary>
+
+    *Correct answer Mobile*
+
+    ![Mobile](/documentation/correct-mobile.png)
+
+    *Correct Answer Tablet*
+
+    ![Tablet](/documentation/correct-tablet.png)
+
+    *Correct answer Desktop*
+
+    ![Desktop](/documentation/correct-desktop.png)
+
+- If the incorrect answer is selected the option button turns red and the incorrect audio sound is played, the correct answer also turns green to give feaadback to the player what the correct answer was. 
+- Once an answer is selected the options are then disabled so correct score is recorded.
+- The correct score counter remains the same and the Next button is displayed to navigate to next question.
+
+    <details><summary>Screenshots</summary>
+
+    *InCorrect answer Mobile*
+
+    ![Mobile](/documentation/incorrect-mobile.png)
+
+    *InCorrect Answer Tablet*
+
+    ![Tablet](/documentation/incorrect-tablet.png)
+
+    *InCorrect answer Desktop*
+
+    ![Desktop](/documentation/incorrect-desktop.png)
+
+
 
 
 ### Results Section
