@@ -400,10 +400,27 @@ The wireframes are below:
 
     |Items being tested|Actions taken to test|Expected result|Outcome|
     |---|---|---|---|
-    |Logo|Moved mouse over logo.|The cursor changes to a pointer and the page reloads when pressed on| :white_check_mark:|
-    |Name Input field|Cursor appears in field when page loads|Name appears in box when typed| :white_check_mark:|
-    |Start Quiz button|Moved mouse over button and clicked|If name has been entered and audio not muted the masters theme tune plays and the quiz area is dispalyed|:white_check_mark:|
-    |Mute button| Moved mouse and clicked | Cursor changes to pointer and the muted icon appears, when quiz is sarted there is no audio |:white_check_mark:|
+    |Logo|Moved mouse over logo.|The cursor changes to a pointer and the page reloads when clicked on.|:white_check_mark:|
+    |Name Input field|Cursor appears in field when page loads.|Name appears in box when typed.| :white_check_mark:|
+    |Start Quiz button|Moved mouse over button and clicked.|If name has been entered and audio not muted the masters theme tune plays and the quiz area is dispalyed.|:white_check_mark:|
+    |Mute button| Moved mouse and clicked | Cursor changes to pointer and the muted icon appears, when quiz is sarted there is no audio.|:white_check_mark:|
+
+- Quiz Area Features
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Logo|Moved mouse over logo.|The cursor changes to a pointer and the user is brought back to Landing page when clicked.|:white_check_mark:|
+    |Options buttons|Moved mouse over button and clicked|The curor changes to a pointer, if corect answer is clicked the button turns green and the correct audio is played. The Next button appears and the score increases by one. If incorrect option is clicked the button turns red, the incorect audio is played and the correct option also turns green. The Next button also appears.|:white_check_mark:|
+    |Next button| Moved mouse over and clicked | Cursor changes to pointer and the Next question and options are displayed. The Next button is removed.|:white_check_mark:|
+    |Show Results button| Moved mouse over and clicked |Button appears after last question is answered, the cursor turns to a pointer and the results area is displayed when clicked.|:white_check_mark:|
+
+- Results Area Features
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Logo|Moved mouse over logo and clicked.|The cursor changes to a pointer and the user is brought back to Landing page when clicked.|:white_check_mark:|
+    |Restart Quiz button|Moved mouse over button and clicked.|The cursor changes to a pointer and the user is brought back to the Landing page when clicked.|:white_check_mark:|
+
 
 
 
@@ -423,15 +440,15 @@ The wireframes are below:
 
     *Chrome*
 
-    ![Chrome]() 
+    ![Chrome](/documentation/chrome.png) 
 
     *Edge*
 
-    ![Edge]()
+    ![Edge](/documentation/edge.png)
 
     *Firefox*
 
-    ![Firefox]()
+    ![Firefox](/documentation/firefox.png)
 
 
 ### User Stories Testing
