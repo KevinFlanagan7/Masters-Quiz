@@ -182,11 +182,9 @@ The wireframes are below:
 - The cursor is set to be in the name input field once pages loads for user convenience.
 - There is a pointer configured to appear once you scroll over input field, Start Quiz and Mute icon.
 
-    <details><summary>Video</summary>
+    <details><summary>Pointer Video</summary>
 
-    *Pointer Video*
-
-    <video src="documentation/instructions-pointer.mp4" controls title="Pointer Video"></video>
+    [Play Video](/documentation/instructions-pointer.mp4)
 
 
 \
@@ -219,9 +217,9 @@ The wireframes are below:
 
 
 
-*Quiz Area Pointer Video*
+    *Quiz Area Pointer Video*
 
-<video src="documentation/quiz-area-pointer.mp4" controls title="Title"></video>
+    
 
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
@@ -342,6 +340,10 @@ The wireframes are below:
 
 
 ### Lighthouse
+
+- Lighthouse test for mobile [results](/documentation/lighthouse-mobile.png).
+- Lighthouse test for desktop [results](/documentation/lighthouse-desktop.png).
+
 
 
 ### Responsiveness
