@@ -212,7 +212,10 @@ The wireframes are below:
 
     ![Desktop](/documentation/quiz-area-desktop.png)
 
-    *Quiz Area Pointer Video*
+*Quiz Area Pointer Video*
+
+
+![video](vscode-vfs://github/KevinFlanagan7/Masters-quiz/documentation/quiz-area-pointer.mp4)
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
 - The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
