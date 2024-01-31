@@ -453,11 +453,38 @@ The wireframes are below:
 
 ### User Stories Testing
 
+| User Story | Testing |
+| :--- | :--- | 
+|As a user, I want the quiz to be responsive to my devices. | The quiz was developed with responsiveness and a mobile-first mindset and then for larger screen sizes.| 
+|As a user, I want clear instructions how to play quiz.|On the landing page there are clear instructions how to play the quiz. They iclude that there is 10 questions, that the player's name has to be entered before starting and that there is an option to mute audio effects.| 
+|As a user, I want to easily navigate through quiz.|   |
+|As a user, I want to know if I selected the correct answer.|  |
+|As a user, I want to know what the correct answer is if I selected wrong answer.|  |
+|As a user, I want to know what question number I am on during quiz.|  |
+|As a user, I want to know my score during quiz.|  |
+|As a user, I want to know my final score with some feedback.|  |
+
 
 
 ### Bugs
 
+- I originall had the question and answers array in the js file, I could get the question to display but not the answers options. When I checked the console there was an error at the foreach answers loop that it was undefined. When I checked the array I found that i had spelled answers incorrectly. Once corected answer options displayed.
+
+    <details><summary>Screenshots</summary>
+
+    *Spelling bug*
+
+    ![Answers](/documentation/answers-bug.png)
+
+    *Fetch bug*
+
+    ![Fetch](/documentation/fetch-bug.png)
+
+
+
 ### Unfixed Bugs
+
+- There are no bugs with the quiz site that I am aware of.
 
 
 
