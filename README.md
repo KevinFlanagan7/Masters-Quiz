@@ -348,6 +348,51 @@ The wireframes are below:
 
 ### Responsiveness
 
+- The quiz site responds nicely to all different screen sizes, the landing image look sharp on all device sizes. It allows the user to navigate around easily. The instructions content is simple and to the point.
+
+- Using Chrome Mobile [Simulator](https://developer.chrome.com/docs/devtools/device-mode "Simulator") extension I have tested the website's responsiveness on different devices. Test results and screenshots below:
+
+    | Device                | Responsive >=768px | Responsive <768px | Landing page Image |
+    | --------------------- | ------------------ | ----------------- | ----------- | 
+    | Galaxy S9+            | N/A                | Good              | Good        |
+    | Galaxy S5             | N/A                | Good              | Good        |
+    | iPhone 6/7/8          | N/A                | Good              | Good        |
+    | iPad Pro              | Good               | N/A               | Good        |
+    | Desktop 1024px        | Good               | N/A               | Good        |
+    | Desktop > 1200px      | Good               | N/A               | Good        |
+
+
+    <details><summary>Screenshots</summary>
+
+    *Mobile*
+
+    | Landing Page | Quiz Area | Results Area |
+    | ---- | ----- | ------ |
+    | ![Landing Page](/documentation/landing-page-mobile.png) | ![Quiz Area](/documentation/quiz-area-mobile.png) | ![Results Area](/documentation/results-area-mobile.png) |
+
+    
+
+    *Tablet*
+
+    | Landing Page | Quiz Area | Results Area |
+    | ---- | ----- | ------- |
+    | ![Landing Page](/documentation/landing-page-tablet.png) | ![Quiz Area](/documentation/quiz-area-tablet.png) | ![Results Area](/documentation/results-area-tablet.png) | 
+
+
+    *Desktop*
+
+    | Landing Page | Quiz Area | Results Area |
+    | ---- | ----- | ------ |
+    | ![Landing Page](/documentation/landing-page-desktop.png) | ![Quiz Area](/documentation/quiz-area-desktop.png) | ![Results Area](/documentation/results-area-desktop.png) |
+
+    
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
  
 ### Features Testing
 
