@@ -133,7 +133,6 @@ The wireframes are below:
 \
 &nbsp;
 
-
 ## Features
 
 ## Existing Features
@@ -147,7 +146,6 @@ The wireframes are below:
 
     <details><summary>Screenshots</summary>
 
-
     *Landing Page Mobile*
 
     ![Landing Page Mobile](/documentation/landing-mobile.png)
@@ -160,7 +158,6 @@ The wireframes are below:
 
     ![Landing Page Desktop](/documentation/landing-desktop.png)
 
-
 \
 &nbsp;
 [Back to Top](#table-of-contents)
@@ -172,6 +169,7 @@ The wireframes are below:
 - The Instructions area of the Landing page gives clear instructions how to play quiz.
 - It contains an input field for the players name which has to be entered before starting the quiz.
 
+    <details><summary>Name Validation</summary>
 
     *Name Validation*
 
@@ -184,8 +182,7 @@ The wireframes are below:
 
     <details><summary>Pointer Video</summary>
 
-    [Play Video](/documentation/instructions-pointer.mp4)
-
+    ![Play Video](/documentation/instructions-pointer.mp4)
 
 \
 &nbsp;
@@ -215,12 +212,7 @@ The wireframes are below:
 
     ![Desktop](/documentation/quiz-area-desktop.png)
 
-
-
     *Quiz Area Pointer Video*
-
-    
-
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
 - The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
@@ -337,14 +329,10 @@ The wireframes are below:
 - CSS validator [results](/documentation/css-validation.png "W3C CSS")
 - JavaScript validator [results](/documentation/JSHint-validation.png "JSHint")
 
-
-
 ### Lighthouse
 
 - Lighthouse test for mobile [results](/documentation/lighthouse-mobile.png).
 - Lighthouse test for desktop [results](/documentation/lighthouse-desktop.png).
-
-
 
 ### Responsiveness
 
@@ -361,7 +349,6 @@ The wireframes are below:
     | Desktop 1024px        | Good               | N/A               | Good        |
     | Desktop > 1200px      | Good               | N/A               | Good        |
 
-
     <details><summary>Screenshots</summary>
 
     *Mobile*
@@ -370,22 +357,17 @@ The wireframes are below:
     | ---- | ----- | ------ |
     | ![Landing Page](/documentation/landing-page-mobile.png) | ![Quiz Area](/documentation/quiz-area-mobile.png) | ![Results Area](/documentation/results-area-mobile.png) |
 
-    
-
     *Tablet*
 
     | Landing Page | Quiz Area | Results Area |
     | ---- | ----- | ------- |
     | ![Landing Page](/documentation/landing-page-tablet.png) | ![Quiz Area](/documentation/quiz-area-tablet.png) | ![Results Area](/documentation/results-area-tablet.png) | 
 
-
     *Desktop*
 
     | Landing Page | Quiz Area | Results Area |
     | ---- | ----- | ------ |
-    | ![Landing Page](/documentation/landing-page-desktop.png) | ![Quiz Area](/documentation/quiz-area-desktop.png) | ![Results Area](/documentation/results-area-desktop.png) |
-
-    
+    | ![Landing Page](/documentation/landing-page-desktop.png) | ![Quiz Area](/documentation/quiz-area-desktop.png) | ![Results Area](/documentation/results-area-desktop.png)|   
 
 \
 &nbsp;
@@ -393,7 +375,6 @@ The wireframes are below:
 \
 &nbsp;
 
- 
 ### Features Testing
 
 - Landing Page Features
@@ -421,10 +402,11 @@ The wireframes are below:
     |Logo|Moved mouse over logo and clicked.|The cursor changes to a pointer and the user is brought back to Landing page when clicked.|:white_check_mark:|
     |Restart Quiz button|Moved mouse over button and clicked.|The cursor changes to a pointer and the user is brought back to the Landing page when clicked.|:white_check_mark:|
 
-
-
-
-
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
         
 ### Browser compatibility
 
@@ -450,6 +432,11 @@ The wireframes are below:
 
     ![Firefox](/documentation/firefox.png)
 
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### User Stories Testing
 
@@ -457,18 +444,24 @@ The wireframes are below:
 | :--- | :--- | 
 |As a user, I want the quiz to be responsive to my devices. | The quiz was developed with responsiveness and a mobile-first mindset and then for larger screen sizes.| 
 |As a user, I want clear instructions how to play quiz.|On the landing page there are clear instructions how to play the quiz. They iclude that there is 10 questions, that the player's name has to be entered before starting and that there is an option to mute audio effects.| 
-|As a user, I want to easily navigate through quiz.|   |
-|As a user, I want to know if I selected the correct answer.|  |
-|As a user, I want to know what the correct answer is if I selected wrong answer.|  |
-|As a user, I want to know what question number I am on during quiz.|  |
-|As a user, I want to know my score during quiz.|  |
-|As a user, I want to know my final score with some feedback.|  |
+|As a user, I want to easily navigate through quiz.|The landing page gives instructions on how to play and navigate through the quiz site.|
+|As a user, I want to know if I selected the correct answer.|If the correct answer is selected the button selected turns green, the correct answer audio is played and the score counter is increased by one.|
+|As a user, I want to know what the correct answer is if I selected wrong answer.|If the incorrect answer is selected the button selected turns red, the incorrect audion is played and the correct answer also trns green. The score counter does not increase. |
+|As a user, I want to know what question number I am on during quiz.|When the palyer starys the quiaz and select the Next buuton during the quiz the question counter below the welcome message will let the user know what question number they are currently on.|
+|As a user, I want to know my score during quiz.|During the quiz the score counter is diplayed at the bottom of the quiz area and will icrease by one if correct answer is selected and stay the same if not.|
+|As a user, I want to know my final score with some feedback.|After selecting an option on the last question the Show Results button will appear, this will bring the user to the results page with the final score in percent, a personalized message will be displayed along with an audio played depending on the result calculated.|
 
-
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Bugs
 
 - I originall had the question and answers array in the js file, I could get the question to display but not the answers options. When I checked the console there was an error at the foreach answers loop that it was undefined. When I checked the array I found that i had spelled answers incorrectly. Once corected answer options displayed.
+- When I changed to fetching the questions from a JSON file in the data folder I got an error and the questions and answer options wouls not diplay. When i checked the console I found an error that the loaded questions could not be assigned to a constant variable. When I chaged the questions array from a const to a let variable the error was resolved and the questions and options displayed.
+- When one of my kids was playing with the quiz they said they got 200% but only got a couple of questions right! They were clicking on the correct answer after they had clicked on the incorrect answer first but the score couter would still increase. Disabling the options buttons once an option was selected resolved this bug and the correct score is now calculated.
 
     <details><summary>Screenshots</summary>
 
@@ -480,13 +473,19 @@ The wireframes are below:
 
     ![Fetch](/documentation/fetch-bug.png)
 
+    *Incorrect score bug*
 
+    ![Incorrect](/documentation/incorrect-score-bug.png)
 
 ### Unfixed Bugs
 
 - There are no bugs with the quiz site that I am aware of.
 
-
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ## Deployment
 
@@ -549,7 +548,6 @@ Code inspiration for mute toggle:
 
 My kids for sound effects and Epidemic Sound website:
 - [Epidemic Sound](https://www.epidemicsound.com/sound-effects "Youtube")
-
 
 \
 &nbsp;
