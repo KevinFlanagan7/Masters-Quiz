@@ -138,7 +138,6 @@ The wireframes are below:
 
 ## Existing Features
 
-  
 ### Landing Page
 
 - The landing page includes a background image of the iconic 12th hole of Augusta National golf course which adds to the users visual experience.
@@ -149,15 +148,15 @@ The wireframes are below:
     <details><summary>Screenshots</summary>
 
 
-    *Mobile*
+    *Landing Page Mobile*
 
     ![Landing Page Mobile](/documentation/landing-mobile.png)
 
-    *Tablet*
+    *Lanading Page Tablet*
 
     ![Landing Page Tablet](/documentation/landing-tablet.png)
 
-    *Desktop*
+    *Landing Page Desktop*
 
     ![Landing Page Desktop](/documentation/landing-desktop.png)
 
@@ -173,22 +172,44 @@ The wireframes are below:
 - The Instructions area of the Landing page gives clear instructions how to play quiz.
 - It contains an input field for the players name which has to be entered before starting the quiz.
 
+
     *Name Validation*
 
     ![Landing Page Mobile](/documentation/name-validation.png)
 
 - Once the player's name has been entered the quiz can be started to the sound of the Masters theme tune for added user experience.
-- There is the optional mute button so the user can mute game audio if they want to play in a quiet area.
-- The cursor is set to be in name input field once pages loads for user convenience.
+- There is the optional mute button so the user can mute quiz audio if they want to play in a quiet area.
+- The cursor is set to be in the name input field once pages loads for user convenience.
 - There is a pointer configured to appear once you scroll over input field, Start Quiz and Mute icon.
 
-    *Pointer*
+    <details><summary>Video</summary>
 
-    ![Pointer]()
+    *Pointer Video*
+
+    ![Pointer](/documentation/instructions-pointer.mp4)
 
     
 
 ### Quiz Section
+
+- The quiz area contains a personaised welcome message to the player by using the name that was entered into the name input field.
+- It has the current question numer that you on out of 10 questions in the quiz.
+- It has the current question and the and the four options for that question.
+- Underneath the options it has the users current score for the question they are on.
+
+    <details><summary>Screenshots</summary>
+
+    *Quiz Area Mobile*
+
+    ![Mobile](/documentation/quiz-area-mobile.png)
+
+    *Quiz Area Tablet*
+
+    ![Tablet](/documentation/quiz-area-tablet.png)
+
+    *Quiz Area Desktop*
+
+    ![Desktop](/documentation/quiz-area-desktop.png)
 
 
 ### Results Section
