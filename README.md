@@ -217,9 +217,12 @@ The wireframes are below:
 
     ![Desktop](/documentation/quiz-area-desktop.png)
 
-    *Quiz Area Pointer Video*
 
-    <video src="documentation/quiz-area-pointer.mp4" controls title="Title"></video>
+
+*Quiz Area Pointer Video*
+
+<video src="documentation/quiz-area-pointer.mp4" controls title="Title"></video>
+
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
 - The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
@@ -331,6 +334,10 @@ The wireframes are below:
 ## Testing
 
 ### Code Validation
+
+- HTML validator [results](/documentation/html-validation.png "W3C HTML")
+- CSS validator [results](/documentation/css-validation.png "W3C CSS")
+- JavaScript validator [results](/documentation/JSHint-validation.png "JSHint")
 
 
 

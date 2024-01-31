@@ -45,7 +45,7 @@ const resetState = () => {
     while (optionsAreaRef.firstChild) {
         optionsAreaRef.removeChild(optionsAreaRef.firstChild);
     }
-}
+};
 
 /**
  * It resets the state and then shows the options for the current question.
@@ -53,7 +53,7 @@ const resetState = () => {
 const displayShuffledQuestion = () => {
     resetState();
     showOptions(shuffledQuestions[currentQuestionIndex]);
-}
+};
 
 /**
  * It increments the current score and updates the score display in the UI.
@@ -61,7 +61,7 @@ const displayShuffledQuestion = () => {
 const increaseScore = () => {
     let score = parseInt(scoreRef.innerHTML);
     scoreRef.innerHTML = ++score;
-}
+};
 
 /**
  * If the name is not entered, it shows an alert, otherwise, it initializes the quiz.
@@ -78,7 +78,7 @@ const startQuiz = () => {
         displayShuffledQuestion();
         mastersThemeRef.play();
     }
-}
+};
 
 /**
  * It updates the UI with the current question number, question text, and answer buttons.
@@ -97,7 +97,7 @@ const showOptions = (question) => {
         button.addEventListener("click", selectAnswer);
         optionsAreaRef.appendChild(button);
     });
-}
+};
 
 /**
  * It visually indicates correct and incorrect answers, plays sounds, updates the score, 
@@ -137,7 +137,7 @@ const selectAnswer = (event) => {
     } else {
         resultsBtnRef.classList.remove("hide");
     }
-}
+};
 
 /**
  * Event listener for the "DOMContentLoaded" event.
