@@ -396,11 +396,47 @@ The wireframes are below:
  
 ### Features Testing
 
+- Landing Page Features
+
+    |Items being tested|Actions taken to test|Expected result|Outcome|
+    |---|---|---|---|
+    |Logo|Moved mouse over logo.|The cursor changes to a pointer and the page reloads when pressed on| :white_check_mark:|
+    |Name Input field|Cursor appears in field when page loads|Name appears in box when typed| :white_check_mark:|
+    |Start Quiz button|Moved mouse over button and clicked|If name has been entered and audio not muted the masters theme tune plays and the quiz area is dispalyed|:white_check_mark:|
+    |Mute button| Moved mouse and clicked | Cursor changes to pointer and the muted icon appears, when quiz is sarted there is no audio |:white_check_mark:|
+
+
+
+
         
 ### Browser compatibility
 
+- Table of Browsers tested and screenshots of results in dropdown menu below:
+
+  | Browser | Intented Appearance | Intented Responsiveness | 
+    | --------| ------------------- | ----------------------- |
+    | Chrome  | Good | Good | 
+    | Edge    | Good | Good | 
+    | Firefox | Good | Good |
+
+    <details><summary>Screenshots</summary>
+
+    *Chrome*
+
+    ![Chrome]() 
+
+    *Edge*
+
+    ![Edge]()
+
+    *Firefox*
+
+    ![Firefox]()
+
 
 ### User Stories Testing
+
+
 
 ### Bugs
 
