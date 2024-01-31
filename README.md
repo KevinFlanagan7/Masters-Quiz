@@ -214,7 +214,7 @@ The wireframes are below:
 
 *Quiz Area Pointer Video*
 
-[Video Link](/documentation/quiz-area-pointer.mp4)
+<video src=documentation/quiz-area-pointer.mp4 controls title="Title"></video>
 
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
