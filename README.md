@@ -182,7 +182,7 @@ The wireframes are below:
 
     <details><summary>Pointer Video</summary>
 
-    ![Play Video](/documentation/instructions-pointer.mp4)
+    [Video Link](/documentation/instructions-pointer.mp4)
 
 \
 &nbsp;
@@ -214,8 +214,8 @@ The wireframes are below:
 
 *Quiz Area Pointer Video*
 
+[Video Link](/documentation/quiz-area-pointer.mp4)
 
-![video](vscode-vfs://github/KevinFlanagan7/Masters-quiz/documentation/quiz-area-pointer.mp4)
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
 - The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
