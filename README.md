@@ -188,13 +188,18 @@ The wireframes are below:
 
     <video src="documentation/instructions-pointer.mp4" controls title="Pointer Video"></video>
 
-    
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;  
 
 ### Quiz Section
 
 - The quiz area contains a personalized welcome message to the player by using the name that was entered into the name input field.
 - It has the current question number that you are on out of 10 questions in the quiz.
-- It has the current question and the the four options for that question.
+- It has the current question and the the four options for that question which are shuffled.
 - Underneath the options it has the users current score for the question they are on.
 - Each button had a pointer configured to appear once user scrolls over.
 
@@ -214,7 +219,7 @@ The wireframes are below:
 
     *Quiz Area Pointer Video*
 
-    <video src="documentation/quiz-area-pointer.mp4" controls title="Quiz Area Pointer"></video>
+    <video src="documentation/quiz-area-pointer.mp4" controls title="Title"></video>
 
 - If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
 - The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
@@ -235,7 +240,7 @@ The wireframes are below:
 
 - If the incorrect answer is selected the option button turns red and the incorrect audio sound is played, the correct answer also turns green to give feaadback to the player what the correct answer was. 
 - Once an answer is selected the options are then disabled so correct score is recorded.
-- The correct score counter remains the same and the Next button is displayed to navigate to next question.
+- The correct score counter remains the same and the Next button is displayed to navigate to the next question.
 
     <details><summary>Screenshots</summary>
 
@@ -251,15 +256,50 @@ The wireframes are below:
 
     ![Desktop](/documentation/incorrect-desktop.png)
 
-
-
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Results Section
 
+- The results area give the player a personalized message and audio depending on the score.
+- There are three different messages and sound effects for scores >=80%, >=60% and <=50%.
+- The quiz can be restarted by clicking on the restart quiz button or the Masters logo.
 
+    <details><summary>Screenshots</summary>
+
+    *Results Area <= 50% Mobile*
+
+    ![Mobile](/documentation/results-mobile.png)
+
+    *Results Area >=60% Tablet*
+
+    ![Tablet](/documentation/results-tablet.png)
+
+    *Results Area >=80% Desktop*
+
+    ![Desktop](/documentation/results-desktop.png)
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ## Features to be Implemented
 
+- In the future I would like to implement different levels to the quiz like an amature and professional level.
+- A leaderboard so the user's score can be compared with other players.
+- A counter timer to answer the questions in a certain time frame like 10 seconds and if no answer selected it would autmatically move to next question giving an incorrect score for that question.
+- Fetch random questions from a questions database on the internet.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ## Technologies used
 
@@ -267,7 +307,7 @@ The wireframes are below:
 
 * [HTML](https://en.wikipedia.org/wiki/HTML "HTML")
 * [CSS](https://en.wikipedia.org/wiki/CSS "CSS")
-* [JS](https://en.wikipedia.org/wiki/JavaScript)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Libraries & Framework
 * [Google Fonts](https://fonts.google.com/ "Google Fonts")
@@ -276,6 +316,7 @@ The wireframes are below:
 * [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
 * [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+* [JShint Validation Service](https://jshint.com/ "JSHint")
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview "Lighthouse")
 * [Coolers](https://coolors.co/ "Coolers")
 * [Am I Responsive](https://ui.dev/amiresponsive "Am I Responsive")
@@ -296,7 +337,6 @@ The wireframes are below:
 ### Lighthouse
 
 
-
 ### Responsiveness
 
  
@@ -308,7 +348,7 @@ The wireframes are below:
 
 ### User Stories Testing
 
-
+### Bugs
 
 ### Unfixed Bugs
 
