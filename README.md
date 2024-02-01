@@ -21,7 +21,7 @@ Welcome to the Masters Golf Quiz website. The goal of this project is to provide
     - [Colours](#colours)
     - [Structure](#structure)
 - [Wireframes](#wireframes)
-    - [Phone Wireframe](#phone-wireframe)
+    - [Mobile Wireframe](#mobile-wireframe)
     - [Tablet Wireframe](#tablet-wireframe)
     - [Desktop Wireframe](#desktop-wireframe)
 - [Features](#features)
@@ -177,7 +177,7 @@ The wireframes are below:
 
 - Once the player's name has been entered the quiz can be started to the sound of the Masters theme tune for added user experience.
 - There is the optional mute button so the user can mute quiz audio if they want to play in a quiet area.
-- The cursor is set to be in the name input field once pages loads for user convenience.
+- The cursor is set to be in the name input field once page loads for user convenience.
 - There is a pointer configured to appear once you scroll over input field, Start Quiz and Mute icon for larger screen sizes.
 
     <details><summary>Instructions Pointer Feature Screenshot</summary>
@@ -333,7 +333,7 @@ The wireframes are below:
 
 - The HTML validator returned no errors, here are the [results](/documentation/html-validation.png "W3C HTML").
 - The CSS validator returned no errors, here are the  [results](/documentation/css-validation.png "W3C CSS").
-- The JavaScript validator also reurned no errors, here are the  [results](/documentation/JSHint-validation.png "JSHint").
+- The JavaScript validator also returned no errors, here are the  [results](/documentation/jshint-validation.png "JSHint").
 
 ### Lighthouse
 
@@ -342,7 +342,7 @@ The wireframes are below:
 
 ### Responsiveness
 
-- The quiz site responds nicely to all different screen sizes, the landing image look sharp on all device sizes. It allows the user to navigate around easily. The instructions content is simple and to the point.
+- The quiz site responds nicely to all different screen sizes, the landing image looks sharp on all device sizes. It allows the user to navigate around easily. The instructions content is simple and to the point.
 
 - Using Chrome Mobile [Simulator](https://developer.chrome.com/docs/devtools/device-mode "Simulator") extension I have tested the website's responsiveness on different devices. Test results and screenshots below:
 
@@ -390,7 +390,7 @@ The wireframes are below:
     |Logo|Moved mouse over logo.|The cursor changes to a pointer and the page reloads when clicked on.|:white_check_mark:|
     |Name Input field|Cursor appears in field when page loads.|Name appears in box when typed.| :white_check_mark:|
     |Start Quiz button|Moved mouse over button and clicked.|If name has been entered and audio not muted the masters theme tune plays and the quiz area is dispalyed.|:white_check_mark:|
-    |Mute button| Moved mouse and clicked | Cursor changes to pointer and the muted icon appears, when quiz is sarted there is no audio.|:white_check_mark:|
+    |Mute button| Moved mouse and clicked | Cursor changes to pointer and the muted icon appears, when quiz is started there is no audio.|:white_check_mark:|
 
 - Quiz Area Features
 
@@ -454,7 +454,7 @@ The wireframes are below:
     |As a user, I want clear instructions how to play quiz.|On the landing page there are clear instructions how to play the quiz. They include that there is 10 questions, that the player's name has to be entered before starting and that there is an option to mute audio effects.| 
     |As a user, I want to easily navigate through quiz.|The landing page gives instructions on how to play and navigate through the quiz site.|
     |As a user, I want to know if I selected the correct answer.|If the correct answer is selected the button selected turns green, the correct answer audio is played and the score counter is increased by one.|
-    |As a user, I want to know what the correct answer is if I selected wrong answer.|If the incorrect answer is selected the button selected turns red, the incorrect audion is played and the correct answer also turns green. The score counter does not increase. |
+    |As a user, I want to know what the correct answer is if I selected wrong answer.|If the incorrect answer is selected the button selected turns red, the incorrect audio is played and the correct answer also turns green. The score counter does not increase. |
     |As a user, I want to know what question number I am on during quiz.|When the palyer starts the quiz and selects the Next button during the quiz the question counter below the welcome message will let the user know what question number they are currently on.|
     |As a user, I want to know my score during quiz.|During the quiz the score counter is diplayed at the bottom of the quiz area and will increase by one if correct answer is selected and stay the same if not.|
     |As a user, I want to know my final score with some feedback.|After selecting an option on the last question the Show Results button will be displayed, this will bring the user to the results page with the final score in percent, a personalized message will be displayed along with an audio played depending on the result calculated.|
