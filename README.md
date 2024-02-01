@@ -4,7 +4,7 @@
 
 ## Goal for this Project
 
-Welcome to the Masters Golf Quiz website. This site's goal is to challenge your golf knowledge of the famous Masters golf tournament with a fun and interactive quiz. 
+Welcome to the Masters Golf Quiz website. The goal of this project is to provide a challenging, fun and interactive quiz with both audio and visual effects to online users.  
 
 ![Responsive Displays](/documentation/am-i-responsive.png)
 
@@ -86,7 +86,7 @@ I have used icons for my website from the [Font Awesome library](https://fontawe
 
 ### Colours
 
-I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize, results for green background can be viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour"), results for light gray background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour"), results for correct answer background can be viewed [here](https://coolors.co/contrast-checker/000000-228C22 "Adjusted colour"), results for incorrect answer background can be viewed  [here](https://coolors.co/contrast-checker/000000-e10000 "Adjusted colour").
+I have used [Coolers](https://coolors.co/ "Coolors") to help in the selection of my colour scheme. I used coolers contrast checker to optimize. Results for green background can be viewed [here](https://coolors.co/contrast-checker/000000-6e9075 "Adjusted colour"), results for light gray background can be viewed [here](https://coolors.co/contrast-checker/000000-d3d3d3 "Adjusted colour").
 
 ![Colour Pallet](/documentation/project-colors.png)
 
@@ -140,17 +140,17 @@ The wireframes are below:
 ### Landing Page
 
 - The landing page includes a background image of the iconic 12th hole of Augusta National golf course which adds to the users visual experience.
-- The landing page contains the Header to let the user know that they have arrived at the The Masters Quiz website.
+- The landing page contains the Masters Quiz heading to let the user know that they have arrived at the The Masters Quiz website.
 - The Masters logo is under the headings and doubles as a link back to the landing page.
 - The Heading, backgroud image and logo are always present during the quiz.
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Landing Page Features Screenshots</summary>
 
     *Landing Page Mobile*
 
     ![Landing Page Mobile](/documentation/landing-mobile.png)
 
-    *Lanading Page Tablet*
+    *Landing Page Tablet*
 
     ![Landing Page Tablet](/documentation/landing-tablet.png)
 
@@ -169,7 +169,7 @@ The wireframes are below:
 - The Instructions area of the Landing page gives clear instructions how to play quiz.
 - It contains an input field for the players name which has to be entered before starting the quiz.
 
-    <details><summary>Name Validation</summary>
+    <details><summary>Name Validation Screenshot</summary>
 
     *Name Validation*
 
@@ -178,11 +178,11 @@ The wireframes are below:
 - Once the player's name has been entered the quiz can be started to the sound of the Masters theme tune for added user experience.
 - There is the optional mute button so the user can mute quiz audio if they want to play in a quiet area.
 - The cursor is set to be in the name input field once pages loads for user convenience.
-- There is a pointer configured to appear once you scroll over input field, Start Quiz and Mute icon.
+- There is a pointer configured to appear once you scroll over input field, Start Quiz and Mute icon for larger screen sizes.
 
-    <details><summary>Pointer Video</summary>
+    <details><summary>Instructions Pointer Feature Screenshot</summary>
 
-    [Video Link](/documentation/instructions-pointer.mp4)
+    ![Pointer](/documentation/instructions-area-pointer.png)
 
 \
 &nbsp;
@@ -196,9 +196,9 @@ The wireframes are below:
 - It has the current question number that you are on out of 10 questions in the quiz.
 - It has the current question and the the four options for that question which are shuffled.
 - Underneath the options it has the users current score for the question they are on.
-- Each button had a pointer configured to appear once user scrolls over.
+- Each button has a pointer configured to appear once user scrolls over on larger screen sizes.
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Quiz Area Features Screenshots</summary>
 
     *Quiz Area Mobile*
 
@@ -212,15 +212,15 @@ The wireframes are below:
 
     ![Desktop](/documentation/quiz-area-desktop.png)
 
-*Quiz Area Pointer Video*
+    *Quiz Area Pointer*
 
-<video src=documentation/quiz-area-pointer.mp4 controls title="Title"></video>
+    ![Quiz Pointer](/documentation/quiz-area-pointer.png)
 
 
-- If the correct answer is selected the option button turns green and the correct audio sound is played if adio has not been muted. 
-- The correct score counter is icreased by one and the Next button is displayed to navigate to next question.
+- If the correct answer is selected the option button turns green and the correct audio sound is played if audio has not been muted. 
+- The correct score counter is icreased by one and the Next button is displayed to navigate to the next question.
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Quiz Area Features Screenshots</summary>
 
     *Correct answer Mobile*
 
@@ -237,8 +237,9 @@ The wireframes are below:
 - If the incorrect answer is selected the option button turns red and the incorrect audio sound is played, the correct answer also turns green to give feaadback to the player what the correct answer was. 
 - Once an answer is selected the options are then disabled so correct score is recorded.
 - The correct score counter remains the same and the Next button is displayed to navigate to the next question.
+- When the last question is answered the Show Results button is displayed instead of the Next button.
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Quiz Area Features Screenshots</summary>
 
     *InCorrect answer Mobile*
 
@@ -260,11 +261,11 @@ The wireframes are below:
 
 ### Results Section
 
-- The results area give the player a personalized message and audio depending on the score.
+- The results area section gives the player a personalized message and audio depending on the score.
 - There are three different messages and sound effects for scores >=80%, >=60% and <=50%.
 - The quiz can be restarted by clicking on the restart quiz button or the Masters logo.
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Results Area Features Screenshots</summary>
 
     *Results Area <= 50% Mobile*
 
@@ -286,10 +287,10 @@ The wireframes are below:
 
 ## Features to be Implemented
 
-- In the future I would like to implement different levels to the quiz like an amature and professional level.
+- In the future I would like to implement different levels to the quiz like an amateur and professional level.
 - A leaderboard so the user's score can be compared with other players.
 - A counter timer to answer the questions in a certain time frame like 10 seconds and if no answer selected it would autmatically move to next question giving an incorrect score for that question.
-- Fetch random questions from a questions database on the internet.
+- To Fetch random questions from a questions database on the internet.
 
 \
 &nbsp;
@@ -306,8 +307,10 @@ The wireframes are below:
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Libraries & Framework
+
 * [Google Fonts](https://fonts.google.com/ "Google Fonts")
 * [Font Awesome library](https://fontawesome.com/ "Font Awesome")
+
 ### Tools
 * [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
 * [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
@@ -328,14 +331,14 @@ The wireframes are below:
 
 ### Code Validation
 
-- HTML validator [results](/documentation/html-validation.png "W3C HTML")
-- CSS validator [results](/documentation/css-validation.png "W3C CSS")
-- JavaScript validator [results](/documentation/JSHint-validation.png "JSHint")
+- The HTML validator returned no errors, here are the [results](/documentation/html-validation.png "W3C HTML").
+- The CSS validator returned no errors, here are the  [results](/documentation/css-validation.png "W3C CSS").
+- The JavaScript validator also reurned no errors, here are the  [results](/documentation/JSHint-validation.png "JSHint").
 
 ### Lighthouse
 
-- Lighthouse test for mobile [results](/documentation/lighthouse-mobile.png).
-- Lighthouse test for desktop [results](/documentation/lighthouse-desktop.png).
+- The Lighthouse test for mobile all passed, here are the [results](/documentation/lighthouse-mobile.png).
+- The Lighthouse test for desktop also all passed, here are the [results](/documentation/lighthouse-desktop.png).
 
 ### Responsiveness
 
@@ -352,7 +355,7 @@ The wireframes are below:
     | Desktop 1024px        | Good               | N/A               | Good        |
     | Desktop > 1200px      | Good               | N/A               | Good        |
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Responsiveness Screenshots</summary>
 
     *Mobile*
 
@@ -421,7 +424,7 @@ The wireframes are below:
     | Edge    | Good | Good | 
     | Firefox | Good | Good |
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Browser compatibility Screenshots</summary>
 
     *Chrome*
 
@@ -443,16 +446,18 @@ The wireframes are below:
 
 ### User Stories Testing
 
-| User Story | Testing |
-| :--- | :--- | 
-|As a user, I want the quiz to be responsive to my devices. | The quiz was developed with responsiveness and a mobile-first mindset and then for larger screen sizes.| 
-|As a user, I want clear instructions how to play quiz.|On the landing page there are clear instructions how to play the quiz. They iclude that there is 10 questions, that the player's name has to be entered before starting and that there is an option to mute audio effects.| 
-|As a user, I want to easily navigate through quiz.|The landing page gives instructions on how to play and navigate through the quiz site.|
-|As a user, I want to know if I selected the correct answer.|If the correct answer is selected the button selected turns green, the correct answer audio is played and the score counter is increased by one.|
-|As a user, I want to know what the correct answer is if I selected wrong answer.|If the incorrect answer is selected the button selected turns red, the incorrect audion is played and the correct answer also trns green. The score counter does not increase. |
-|As a user, I want to know what question number I am on during quiz.|When the palyer starys the quiaz and select the Next buuton during the quiz the question counter below the welcome message will let the user know what question number they are currently on.|
-|As a user, I want to know my score during quiz.|During the quiz the score counter is diplayed at the bottom of the quiz area and will icrease by one if correct answer is selected and stay the same if not.|
-|As a user, I want to know my final score with some feedback.|After selecting an option on the last question the Show Results button will appear, this will bring the user to the results page with the final score in percent, a personalized message will be displayed along with an audio played depending on the result calculated.|
+- Table of User Story Testing.
+
+    | User Story | Testing |
+    | :--- | :--- | 
+    |As a user, I want the quiz to be responsive to my devices. | The quiz was developed with responsiveness and a mobile-first mindset. CSS Media queries used to make site responsive for larger screen sizes.| 
+    |As a user, I want clear instructions how to play quiz.|On the landing page there are clear instructions how to play the quiz. They include that there is 10 questions, that the player's name has to be entered before starting and that there is an option to mute audio effects.| 
+    |As a user, I want to easily navigate through quiz.|The landing page gives instructions on how to play and navigate through the quiz site.|
+    |As a user, I want to know if I selected the correct answer.|If the correct answer is selected the button selected turns green, the correct answer audio is played and the score counter is increased by one.|
+    |As a user, I want to know what the correct answer is if I selected wrong answer.|If the incorrect answer is selected the button selected turns red, the incorrect audion is played and the correct answer also turns green. The score counter does not increase. |
+    |As a user, I want to know what question number I am on during quiz.|When the palyer starts the quiz and selects the Next button during the quiz the question counter below the welcome message will let the user know what question number they are currently on.|
+    |As a user, I want to know my score during quiz.|During the quiz the score counter is diplayed at the bottom of the quiz area and will increase by one if correct answer is selected and stay the same if not.|
+    |As a user, I want to know my final score with some feedback.|After selecting an option on the last question the Show Results button will be displayed, this will bring the user to the results page with the final score in percent, a personalized message will be displayed along with an audio played depending on the result calculated.|
 
 \
 &nbsp;
@@ -462,11 +467,11 @@ The wireframes are below:
 
 ### Bugs
 
-- I originall had the question and answers array in the js file, I could get the question to display but not the answers options. When I checked the console there was an error at the foreach answers loop that it was undefined. When I checked the array I found that i had spelled answers incorrectly. Once corected answer options displayed.
-- When I changed to fetching the questions from a JSON file in the data folder I got an error and the questions and answer options wouls not diplay. When i checked the console I found an error that the loaded questions could not be assigned to a constant variable. When I chaged the questions array from a const to a let variable the error was resolved and the questions and options displayed.
+- I originall had the question and answers array in the js file, I could get the question to display but not the answer options. When I checked the console log there was an error at the foreach answers loop that it was undefined. When I checked the array I found that I had spelled answers incorrectly. Once corected answer options displayed.
+- When I changed to fetching the questions from a JSON file in the data folder I got an error causing the questions and answer options not to display. When I checked the console log I found an error that the loaded questions could not be assigned to a constant variable. When I chaged the questions array from a const to a let variable the error was resolved and the questions and answer options displayed.
 - When one of my kids was playing with the quiz they said they got 200% but only got a couple of questions right! They were clicking on the correct answer after they had clicked on the incorrect answer first but the score couter would still increase. Disabling the options buttons once an option was selected resolved this bug and the correct score is now calculated.
 
-    <details><summary>Screenshots</summary>
+    <details><summary>Bugs Screenshots</summary>
 
     *Spelling bug*
 
@@ -544,6 +549,10 @@ Code inspiration for Increasing score:
 Code inspiration for displaying quiz questions and options:
 
 - [Youtube Web Dev Simplified tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k "Youtube")
+
+Code inspiration for Fetch API:
+
+- [Youtube Fetch API tutorial](https://www.youtube.com/watch?v=Oage6H4GX2o "Youtube")
 
 Code inspiration for mute toggle:
 

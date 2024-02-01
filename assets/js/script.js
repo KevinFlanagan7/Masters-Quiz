@@ -31,7 +31,8 @@ let isMuted = false;
 
 /**
  * Fetch API to get Quiz questions from the local JSON file in the data folder.
- *  It loads the questions and assigns them to the global variable "questions" array. 
+ * It loads the questions and assigns them to the global variable "questions" array.
+ * Code inspiration from Youtube Fetch tutorial credited in README. 
  */
 fetch("assets/data/questions.json")
     .then(response => response.json())
@@ -57,6 +58,7 @@ const displayShuffledQuestion = () => {
 
 /**
  * It increments the current score and updates the score display in the UI.
+ * Code inspiration from Love Maths project credited in README.
  */
 const increaseScore = () => {
     let score = parseInt(scoreRef.innerHTML);
@@ -83,6 +85,7 @@ const startQuiz = () => {
 /**
  * It updates the UI with the current question number, question text, and answer buttons.
  * @param {Object} question - The question object containing the question text and answers.
+ * Code inspiration from Youtube Web Dev Simplified tutorial credited in README.
  */
 const showOptions = (question) => {
     currentQuestionRef.innerHTML = currentQuestionIndex + 1;
@@ -103,6 +106,7 @@ const showOptions = (question) => {
  * It visually indicates correct and incorrect answers, plays sounds, updates the score, 
  * and shows the "Next" or "Results" button based on the current question index.
  * @param {Event} event - The click event object.
+ * Code inspiration from Youtube Web Dev Simplified tutorial credited in README.
  */
 const selectAnswer = (event) => {
     const selectedButton = event.target;
@@ -143,6 +147,7 @@ const selectAnswer = (event) => {
  * Event listener for the "DOMContentLoaded" event.
  * It initializes quiz event listeners (startQuiz, mute, next, results & restart quiz buttons) 
  * when the DOM is fully loaded.
+ * Code inspiration from Youtube Mute button tutorial credited in README.
  * @param {Event} event - The DOMContentLoaded event.
  */
 document.addEventListener("DOMContentLoaded", () => {
